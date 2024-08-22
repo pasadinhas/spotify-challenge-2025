@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Spotify from "./spotify/Spotify";
+import Spotify from "./Spotify";
 
 function App() {
-  const [me, setMe] = useState<SpotifyApi.CurrentUsersProfileResponse | null>(null);
+  const [playlist, setPlaylist] =
+    useState<SpotifyApi.PlaylistBaseObject | null>(null);
 
   useEffect(() => {
-    Spotify.getCurrentUser().then(response => setMe(response))
+    Spotify.getPlaylist("2fFCa8euP1YhQX3WPmEsz7").then((response) =>
+      setPlaylist(response)
+    );
   }, []);
 
   return (
     <div className="App">
       <h1>Hello</h1>
-      <p>I can see you... But you can <button style={{padding: '2px', background: '#4D1426'}} onClick={() => {
-        localStorage.removeItem("access_token");
-        window.location.href = window.location.href;
-      }}>Log out</button></p>
       <br />
-      <pre>{JSON.stringify(me, null, 2)}</pre>
+      <pre>{JSON.stringify(playlist, null, 2)}</pre>
     </div>
   );
 }
