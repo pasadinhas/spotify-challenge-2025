@@ -1,10 +1,10 @@
+import Spotify from "./Spotify";
 import SpotifyIcon from "./SpotifyIcon";
 import "./SpotifyLoginButton.css";
-import { generateAuthenticationUrl } from "./Authentication";
 
 function SpotifyLoginButton() {
   return (
-    <a className="SpotifyLoginButton" href={generateAuthenticationUrl()}>
+    <a className="SpotifyLoginButton" href={Spotify.getAuthenticationUrl()}>
       <span className="SpotifyLoginButtonInner">
         <span className="SpotifyIcon">
           <SpotifyIcon />

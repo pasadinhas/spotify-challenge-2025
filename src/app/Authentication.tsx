@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AuthenticationRequired, CheckingAuthStatus } from "./LoadingPages";
-import { requestAuthorizationToken } from "./spotify/Authentication";
+import Spotify from "./spotify/Spotify";
 
 enum AuthenticationState {
   CHECKING_AUTH_STATUS,
@@ -29,7 +29,7 @@ function Authentication({children}: Props): JSX.Element {
 
     let code = urlParams.get("code");
     if (code != null) {
-        requestAuthorizationToken(code).then(response => {
+      Spotify.authenticate(code).then(response => {
           window.history.replaceState({}, document.title, window.location.pathname); // remove the query parameters from the URL
           setLoadingState(AuthenticationState.AUTHENTICATED)
         })

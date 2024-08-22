@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import Spotify from "./spotify/Spotify";
 
 function App() {
-  const [me, setMe] = useState(null);
+  const [me, setMe] = useState<SpotifyApi.CurrentUsersProfileResponse | null>(null);
 
   useEffect(() => {
-    fetch("https://api.spotify.com/v1/me", {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("access_token")}`,
-      },
-    })
-      .then((r) => r.json())
-      .then((response) => setMe(response));
+    Spotify.getCurrentUser().then(response => setMe(response))
   }, []);
 
   return (
