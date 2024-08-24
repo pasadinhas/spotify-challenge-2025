@@ -1,0 +1,27 @@
+[
+  {
+    "date": "2025-01-01",
+    "rule": "Happy New Year",
+    "description": "Add any song you'd like to celebrate the new year!"
+  },
+  {
+    "date": "2025-04-25",
+    "rule": "Liberdade",
+    "description": "Add a song that ..."
+  },
+  {
+    "date": "2025-12-25",
+    "rule": "Ho! Ho! Ho! Merry Christmas!",
+    "description": "Add a Christmas song"
+  },
+  {
+    "date": "2025-12-30",
+    "rule": "Song from 2025",
+    "description": "Add any song released in 2025"
+  },
+  {
+    "date": "2025-12-31",
+    "rule": "Year in Review",
+    "description": "Add any song you'd like to celebrate the end on the year"
+  }
+]

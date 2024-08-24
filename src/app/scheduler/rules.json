@@ -1,0 +1,281 @@
+[
+  { "rule": "jedi#1", "description": "Song from 1994" },
+  { "rule": "jedi#2", "description": "Song from 2012 (The year we've met)" },
+  { "rule": "jedi#3", "description": "Song from graduation year (master's)" },
+  {
+    "rule": "jedi#4",
+    "description": "Song from the first album one bought (or the first album one remebers buying)"
+  },
+  { "rule": "jedi#5", "description": "A song with a female name in the title" },
+  {
+    "rule": "jedi#6",
+    "description": "A song that mentions any alcoholic drink in the lyrics"
+  },
+  { "rule": "jedi#7", "description": "A song released on one's birthday" },
+  {
+    "rule": "jedi#8",
+    "description": "A song that includes in the title or lyrics the current weather in the place one is that day"
+  },
+  { "rule": "jedi#9", "description": "A song that was remastered" },
+  {
+    "rule": "jedi#10",
+    "description": "A song with a classic instrument that is not from the classical genre"
+  },
+  { "rule": "jedi#11", "description": "Jedi Rule #11" },
+  { "rule": "jedi#12", "description": "Jedi Rule #12" },
+  { "rule": "jedi#13", "description": "Jedi Rule #13" },
+  { "rule": "jedi#14", "description": "Jedi Rule #14" },
+  { "rule": "jedi#15", "description": "Jedi Rule #15" },
+  { "rule": "jedi#16", "description": "Jedi Rule #16" },
+  { "rule": "jedi#17", "description": "Jedi Rule #17" },
+  { "rule": "jedi#18", "description": "Jedi Rule #18" },
+  { "rule": "jedi#19", "description": "Jedi Rule #19" },
+  { "rule": "jedi#20", "description": "Jedi Rule #20" },
+  { "rule": "jedi#21", "description": "Jedi Rule #21" },
+  { "rule": "jedi#22", "description": "Jedi Rule #22" },
+  { "rule": "jedi#23", "description": "Jedi Rule #23" },
+  { "rule": "jedi#24", "description": "Jedi Rule #24" },
+  { "rule": "jedi#25", "description": "Jedi Rule #25" },
+  { "rule": "jedi#26", "description": "Jedi Rule #26" },
+  { "rule": "jedi#27", "description": "Jedi Rule #27" },
+  { "rule": "jedi#28", "description": "Jedi Rule #28" },
+  { "rule": "jedi#29", "description": "Jedi Rule #29" },
+  { "rule": "jedi#30", "description": "Jedi Rule #30" },
+  { "rule": "jedi#31", "description": "Jedi Rule #31" },
+  { "rule": "jedi#32", "description": "Jedi Rule #32" },
+  { "rule": "jedi#33", "description": "Jedi Rule #33" },
+  { "rule": "jedi#34", "description": "Jedi Rule #34" },
+  { "rule": "jedi#35", "description": "Jedi Rule #35" },
+  { "rule": "jedi#36", "description": "Jedi Rule #36" },
+  { "rule": "jedi#37", "description": "Jedi Rule #37" },
+  { "rule": "jedi#38", "description": "Jedi Rule #38" },
+  { "rule": "jedi#39", "description": "Jedi Rule #39" },
+  { "rule": "jedi#40", "description": "Jedi Rule #40" },
+  {
+    "rule": "sil#1",
+    "description": "Song with a color (one and one only) in its title"
+  },
+  { "rule": "sil#2", "description": "Cover song" },
+  { "rule": "sil#3", "description": "Song with a city on its name" },
+  { "rule": "sil#4", "description": "Song with a country on its name" },
+  {
+    "rule": "sil#5",
+    "description": "A song we have seen live the 3 of us together"
+  },
+  {
+    "rule": "sil#6",
+    "description": "A song that finished top 10 in any Eurovision final, but did not win"
+  },
+  {
+    "rule": "sil#7",
+    "description": "A song that won an Oscar for Best Original Song"
+  },
+  { "rule": "sil#8", "description": "Song from a Fifa game" },
+  {
+    "rule": "sil#9",
+    "description": "Song, artist and album start with the same letter"
+  },
+  {
+    "rule": "sil#10",
+    "description": "A song with the same name as one already published, that is not a cover"
+  },
+  {
+    "rule": "sil#11",
+    "description": "A song whose title includes the name of another band / artist"
+  },
+  {
+    "rule": "sil#12",
+    "description": "A song that respects the rule for this day on the 2024 challenge"
+  },
+  {
+    "rule": "sil#13",
+    "description": "A song that has the same title as the album it belongs to"
+  },
+  {
+    "rule": "sil#14",
+    "description": "A song sang in a language that is not an official language of any country we all currently live in"
+  },
+  {
+    "rule": "sil#15",
+    "description": "A song on the weekly chart of that week in some Portuguese radio"
+  },
+  {
+    "rule": "sil#16",
+    "description": "Song title is never mentioned on the lyrics"
+  },
+  {
+    "rule": "sil#17",
+    "description": "Song that mentions the name of the album but does not contain it on the title"
+  },
+  {
+    "rule": "sil#18",
+    "description": "Song you've seen live but not performed by its original artist."
+  },
+  {
+    "rule": "sil#19",
+    "description": "Song you've seen performed live by a tribute band but not by the original band."
+  },
+  { "rule": "sil#20", "description": "Song from a self-titled album" },
+  {
+    "rule": "sil#21",
+    "description": "A song from your 2024 Spotify Wrapped that was NOT included on the 2024 challenge"
+  },
+  { "rule": "sil#22", "description": "Your most listened song from any year" },
+  { "rule": "sil#23", "description": "A song that is at least 8 minutes long" },
+  {
+    "rule": "sil#24",
+    "description": "A song that is exactly X minutes and 42 seconds long (X can be any integer positive number)"
+  },
+  {
+    "rule": "sil#25",
+    "description": "A song that participated in Festival da Canção but did not win it"
+  },
+  { "rule": "sil#26", "description": "Sil Rule #26" },
+  { "rule": "sil#27", "description": "Sil Rule #27" },
+  { "rule": "sil#28", "description": "Sil Rule #28" },
+  { "rule": "sil#29", "description": "Sil Rule #29" },
+  { "rule": "sil#30", "description": "Sil Rule #30" },
+  { "rule": "sil#31", "description": "Sil Rule #31" },
+  { "rule": "sil#32", "description": "Sil Rule #32" },
+  { "rule": "sil#33", "description": "Sil Rule #33" },
+  { "rule": "sil#34", "description": "Sil Rule #34" },
+  { "rule": "sil#35", "description": "Sil Rule #35" },
+  { "rule": "sil#36", "description": "Sil Rule #36" },
+  { "rule": "sil#37", "description": "Sil Rule #37" },
+  { "rule": "sil#38", "description": "Sil Rule #38" },
+  { "rule": "sil#39", "description": "Sil Rule #39" },
+  { "rule": "sil#40", "description": "Sil Rule #40" },
+  {
+    "rule": "pasadinhas#1",
+    "description": "Songs that reached top 10 UK but never reached top 10 US"
+  },
+  {
+    "rule": "pasadinhas#2",
+    "description": "Band changed lead singer, song must not be of the 1st singer"
+  },
+  {
+    "rule": "pasadinhas#3",
+    "description": "The band played this song in The Simpsons"
+  },
+  {
+    "rule": "pasadinhas#4",
+    "description": "Song of an artist from our hometown"
+  },
+  {
+    "rule": "pasadinhas#5",
+    "description": "Song of an artist from where we currently live"
+  },
+  {
+    "rule": "pasadinhas#6",
+    "description": "Song from the last concert we saw live"
+  },
+  {
+    "rule": "pasadinhas#7",
+    "description": "Songs with any feline (cat, lion, tiger, ...) in the lyrics"
+  },
+  { "rule": "pasadinhas#8", "description": "Songs that mention any US state" },
+  { "rule": "pasadinhas#9", "description": "Song from an advert" },
+  {
+    "rule": "pasadinhas#10",
+    "description": "Been to a concert of this artist, but this song was not performed"
+  },
+  { "rule": "pasadinhas#11", "description": "Band member gone solo" },
+  {
+    "rule": "pasadinhas#12",
+    "description": "Brasilian song covered by a Portuguese, sang with european accent"
+  },
+  {
+    "rule": "pasadinhas#13",
+    "description": "Song from Idolos (Portugal) Season 3 during the finals (galas)"
+  },
+  {
+    "rule": "pasadinhas#14",
+    "description": "Song with an element from the periodic table in the title"
+  },
+  {
+    "rule": "pasadinhas#15",
+    "description": "Song by a solo artist, released when they were exactly 28 years old"
+  },
+  { "rule": "pasadinhas#16", "description": "Song from a Musical" },
+  {
+    "rule": "pasadinhas#17",
+    "description": "Song with one of the four seasons in the title or lyrics"
+  },
+  {
+    "rule": "pasadinhas#18",
+    "description": "Song with a month in the title or lyrics"
+  },
+  {
+    "rule": "pasadinhas#19",
+    "description": "Song that is sang by a member of the band that is not the (lead) singer"
+  },
+  {
+    "rule": "pasadinhas#20",
+    "description": "Song name has exactly two words, both starting with the same letter"
+  },
+  {
+    "rule": "pasadinhas#21",
+    "description": "Song with lyrics in multiple languages"
+  },
+  { "rule": "pasadinhas#22", "description": "Song that samples another song" },
+  {
+    "rule": "pasadinhas#23",
+    "description": "Song with an exclamation or question mark in the title"
+  },
+  { "rule": "pasadinhas#24", "description": "Song that features whistling" },
+  {
+    "rule": "pasadinhas#25",
+    "description": "Song with a title that is a single word repeated (at least once)"
+  },
+  {
+    "rule": "pasadinhas#26",
+    "description": "Song that features a phone call or voicemail"
+  },
+  {
+    "rule": "pasadinhas#27",
+    "description": "Song that features a fade-out ending"
+  },
+  {
+    "rule": "pasadinhas#28",
+    "description": "Song title with at least four words, all ordered alphabetically"
+  },
+  {
+    "rule": "pasadinhas#29",
+    "description": "Song with 3/4 or 6/8 time signature"
+  },
+  {
+    "rule": "pasadinhas#30",
+    "description": "Song with one of the four elements (air, water, earth, fire) in the title"
+  },
+  {
+    "rule": "pasadinhas#31",
+    "description": "Song with a celestial body in the title"
+  },
+  {
+    "rule": "pasadinhas#32",
+    "description": "The song title is the start of the lyrics"
+  },
+  {
+    "rule": "pasadinhas#33",
+    "description": "Duet where the singers have an age difference of at least 25 years"
+  },
+  { "rule": "pasadinhas#34", "description": "Hidden track on a physical album" },
+  {
+    "rule": "pasadinhas#35",
+    "description": "(Theme) Song from a 007 James Bond movie"
+  },
+  {
+    "rule": "pasadinhas#36",
+    "description": "(Theme?) song from a Cartoon/Anime"
+  },
+  {
+    "rule": "pasadinhas#37",
+    "description": "Instrumental song from an artist that usually has lyrics/singing"
+  },
+  { "rule": "pasadinhas#38", "description": "Song from a Movie OST" },
+  { "rule": "pasadinhas#39", "description": "Song from a Video Game OST" },
+  {
+    "rule": "pasadinhas#40",
+    "description": "Song with the Pokemon's type whose number is that song's index in the title"
+  }
+]

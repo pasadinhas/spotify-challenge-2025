@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Spotify from "./Spotify";
+import Schedule from "./scheduler/scheduler"; 
 
 function App() {
-  const [playlist, setPlaylist] =
-    useState<SpotifyApi.PlaylistBaseObject | null>(null);
-
-  useEffect(() => {
-    Spotify.getPlaylist("2fFCa8euP1YhQX3WPmEsz7").then((response) =>
-      setPlaylist(response)
-    );
-  }, []);
+  const startDate = new Date(2025, 0, 1);
+  const endDate = new Date(2026, 0, 1);
+  
+  const schedule = []
+  for (let date = startDate, i = 0; date < endDate; date.setDate(date.getDate() + 1)) {
+      schedule.push(`${date.toDateString()} => ${Schedule[i++].description}`);
+  }
 
   return (
     <div className="App">
       <h1>Hello</h1>
       <br />
-      <pre>{JSON.stringify(playlist, null, 2)}</pre>
+      <pre>{schedule.join("\n")}</pre>
     </div>
   );
 }
