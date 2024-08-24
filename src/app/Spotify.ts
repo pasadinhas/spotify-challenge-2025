@@ -2,6 +2,7 @@ import axios from "axios";
 
 const CLIENT_ID = "5be8aded076246b89bf39e6e698bfd7a";
 const CLIENT_SECRET = "bfebf0293e5a4fc59fc348e30afcf093";
+const LOCAL_STORAGE_ACCESS_TOKEN_KEY = "spotify_2025_access_token";
 
 const client = axios.create({
   baseURL: "https://api.spotify.com/",
@@ -12,7 +13,7 @@ const client = axios.create({
 
 client.interceptors.request.use(
   (request) => {
-    const accessToken = localStorage.getItem("access_token");
+    const accessToken = localStorage.getItem(LOCAL_STORAGE_ACCESS_TOKEN_KEY);
     console.log("[AuthInterceptor] Setting access token in the request: " + accessToken)
     if (accessToken) {
       request.headers["Authorization"] = `Bearer ${accessToken}`;
@@ -33,7 +34,7 @@ client.interceptors.response.use(
       try {
         await Spotify.authenticate();
         // Update the authorization header with the new access token.
-        const accessToken = localStorage.getItem("access_token");
+        const accessToken = localStorage.getItem(LOCAL_STORAGE_ACCESS_TOKEN_KEY);
         client.defaults.headers.common[
           "Authorization"
         ] = `Bearer ${accessToken}`;
@@ -41,7 +42,7 @@ client.interceptors.response.use(
       } catch (authError) {
         // Handle refresh token errors by clearing stored tokens and redirecting to the login page.
         console.error("Automatic authentication failed:", authError);
-        localStorage.removeItem("access_token");
+        localStorage.removeItem(LOCAL_STORAGE_ACCESS_TOKEN_KEY);
         return Promise.reject(authError);
       }
     }
@@ -73,8 +74,7 @@ const Spotify = {
         }
       );
       console.log(response.data);
-      localStorage.setItem("access_token", response.data.access_token);
-      localStorage.setItem("refresh_token", response.data.refresh_token);
+      localStorage.setItem(LOCAL_STORAGE_ACCESS_TOKEN_KEY, response.data.access_token);
       return response.data;
     } catch (error) {
       console.error("Error during authentication:", error);
