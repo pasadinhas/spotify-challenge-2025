@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* CSS Reset from https://www.joshwcomeau.com/css/custom-css-reset/ with some tweaks */
 
 /* 1. Use a more-intuitive box-sizing model. */

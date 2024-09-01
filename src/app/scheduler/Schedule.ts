@@ -1,10 +1,12 @@
+import { Player1, Player2, Player3, PlayerAll } from './Players';
 import PlayerRules from './rules.json'
 import FixedDateRules from './shared_rules.json'
 
-let seed = 32;
+// let seed = 32;
+let seed = Math.random() * 100000000;
 
-function dayOfYearIndex(dateStr: string) {
-  const date = new Date(dateStr);
+function dayOfYearIndex(dateStr: string | undefined) {
+  const date = dateStr ? new Date(dateStr) : new Date();
   const startOfYear = new Date(date.getFullYear(), 0, 1);
   const diffInMillis = date.getTime() - startOfYear.getTime();
   return Math.floor(diffInMillis / (1000 * 60 * 60 * 24));
@@ -41,26 +43,36 @@ function createShuffle() {
 
   let result = []
   for (let i = 0; i < playerOneRules.length; i++) { // we know all arrays have the same length
-    result.push(playerOneRules[i]);
-    result.push(playerTwoRules[i]);
-    result.push(playerThrRules[i]);
+    result.push({...playerOneRules[i], player: Player1});
+    result.push({...playerTwoRules[i], player: Player2});
+    result.push({...playerThrRules[i], player: Player3});
   }
 
   for (const fixedDataRule of FixedDateRules) {
-    result.splice(dayOfYearIndex(fixedDataRule.date), 0, fixedDataRule)
+    result.splice(dayOfYearIndex(fixedDataRule.date), 0, {...fixedDataRule, player: PlayerAll})
   }
 
-  return result;
+  // 1735689600000 is the timestamp for Jan 1st 2025
+  return result.map((v, i) => ({...v, date: new Date(1735689600000 + 1000 * 60 * 60 * 24 * i)})); 
+}
+
+interface Rule {
+  rule: string,
+  description: string,
+  player: string,
+  date: Date
 }
 
 let validShuffle = false
-let shuffle: typeof PlayerRules = []
+let shuffle: Rule[] = []
 
 while (!validShuffle) {
   shuffle = createShuffle()
   validShuffle = validateShuffle(shuffle)
 }
 
-const Schedule = shuffle;
+export function today() {
+  return shuffle[dayOfYearIndex(undefined)]
+}
 
-export default Schedule;
+export const Schedule = shuffle;
