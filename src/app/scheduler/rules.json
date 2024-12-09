@@ -4,7 +4,7 @@
   { "rule": "jedi#3", "description": "Song from graduation year (master's)" },
   {
     "rule": "jedi#4",
-    "description": "Song from the first album one bought (or the first album one remebers buying)"
+    "description": "Song from the first album one bought (or the first album one remembers buying)"
   },
   { "rule": "jedi#5", "description": "A song with a female name in the title" },
   {
@@ -259,7 +259,10 @@
     "rule": "pasadinhas#33",
     "description": "Duet where the singers have an age difference of at least 25 years"
   },
-  { "rule": "pasadinhas#34", "description": "Hidden track on a physical album" },
+  {
+    "rule": "pasadinhas#34",
+    "description": "Hidden track on a physical album"
+  },
   {
     "rule": "pasadinhas#35",
     "description": "(Theme) Song from a 007 James Bond movie"
