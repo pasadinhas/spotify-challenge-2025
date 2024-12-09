@@ -81,8 +81,8 @@ while (!validShuffle) {
   validShuffle = validateShuffle(shuffle);
 }
 
-export function today() {
-  return shuffle[dayOfYearIndex(undefined)]
+export function getRules(date: Date) {
+  return shuffle[dayOfYearIndex(date.toDateString())];
 }
 
 export const Schedule = shuffle;
