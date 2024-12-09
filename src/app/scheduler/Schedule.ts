@@ -57,10 +57,7 @@ function createShuffle() {
 }
 
 interface Rule {
-  rule: string,
-  description: string,
-  player: string,
-  date: Date
+  notes?: string;
 }
 
 let validShuffle = false

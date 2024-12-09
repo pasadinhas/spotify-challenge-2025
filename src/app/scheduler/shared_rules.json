@@ -2,7 +2,8 @@
   {
     "date": "2025-01-01",
     "rule": "Happy New Year",
-    "description": "Add any song you'd like to celebrate the new year!"
+    "description": "Add any song you'd like to celebrate the new year!",
+    "notes": "This is a note"
   },
   {
     "date": "2025-04-25",
@@ -22,6 +23,6 @@
   {
     "date": "2025-12-31",
     "rule": "Year in Review",
-    "description": "Add any song you'd like to celebrate the end on the year"
+    "description": "Add any song you'd like to celebrate the end of the year"
   }
 ]
