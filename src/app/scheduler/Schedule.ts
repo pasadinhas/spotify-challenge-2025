@@ -1,6 +1,6 @@
-import { Player1, Player2, Player3, PlayerAll } from './Players';
-import PlayerRules from './rules.json'
-import FixedDateRules from './shared_rules.json'
+import { Player1, Player2, Player3, PlayerAll } from "./Players";
+import PlayerRules from "./rules.json";
+import FixedDateRules from "./shared_rules.json";
 
 // let seed = 32;
 let seed = Math.random() * 100000000;
@@ -13,9 +13,11 @@ function dayOfYearIndex(dateStr: string | undefined) {
 }
 
 function deterministicShuffle(array: typeof PlayerRules, seed: number) {
-  let currentIndex = array.length, temporaryValue, randomIndex;
+  let currentIndex = array.length,
+    temporaryValue,
+    randomIndex;
   seed = seed || 1;
-  let random = function() {
+  let random = function () {
     var x = Math.sin(seed++) * 10000;
     return x - Math.floor(x);
   };
@@ -37,35 +39,46 @@ function validateShuffle(shuffle: any) {
 }
 
 function createShuffle() {
-  const playerOneRules = deterministicShuffle([...PlayerRules], seed++)
-  const playerTwoRules = deterministicShuffle([...PlayerRules], seed++)
-  const playerThrRules = deterministicShuffle([...PlayerRules], seed++)
+  const playerOneRules = deterministicShuffle([...PlayerRules], seed++);
+  const playerTwoRules = deterministicShuffle([...PlayerRules], seed++);
+  const playerThrRules = deterministicShuffle([...PlayerRules], seed++);
 
-  let result = []
-  for (let i = 0; i < playerOneRules.length; i++) { // we know all arrays have the same length
-    result.push({...playerOneRules[i], player: Player1});
-    result.push({...playerTwoRules[i], player: Player2});
-    result.push({...playerThrRules[i], player: Player3});
+  let result = [];
+  for (let i = 0; i < playerOneRules.length; i++) {
+    // we know all arrays have the same length
+    result.push({ ...playerOneRules[i], player: Player1 });
+    result.push({ ...playerTwoRules[i], player: Player2 });
+    result.push({ ...playerThrRules[i], player: Player3 });
   }
 
   for (const fixedDataRule of FixedDateRules) {
-    result.splice(dayOfYearIndex(fixedDataRule.date), 0, {...fixedDataRule, player: PlayerAll})
+    result.splice(dayOfYearIndex(fixedDataRule.date), 0, {
+      ...fixedDataRule,
+      player: PlayerAll,
+    });
   }
 
   // 1735689600000 is the timestamp for Jan 1st 2025
-  return result.map((v, i) => ({...v, date: new Date(1735689600000 + 1000 * 60 * 60 * 24 * i)})); 
+  return result.map((v, i) => ({
+    ...v,
+    date: new Date(1735689600000 + 1000 * 60 * 60 * 24 * i),
+  }));
 }
 
 interface Rule {
+  rule: string;
+  description: string;
+  player: string;
+  date: Date;
   notes?: string;
 }
 
-let validShuffle = false
-let shuffle: Rule[] = []
+let validShuffle = false;
+let shuffle: Rule[] = [];
 
 while (!validShuffle) {
-  shuffle = createShuffle()
-  validShuffle = validateShuffle(shuffle)
+  shuffle = createShuffle();
+  validShuffle = validateShuffle(shuffle);
 }
 
 export function today() {
