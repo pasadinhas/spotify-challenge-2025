@@ -56,6 +56,20 @@ const Spotify = {
     return response.data;
   },
 
+  async getPlaylistTracks(id: string): Promise<SpotifyApi.PlaylistTrackObject[]> {
+    let result: SpotifyApi.PlaylistTrackObject[] = []
+    let playlist = await this.getPlaylist(id);
+    if (!playlist) return [];
+    result = [...result, ...playlist.tracks.items]
+    while (playlist.tracks.next) {
+      const tracks: SpotifyApi.PagingObject<SpotifyApi.PlaylistTrackObject> = (await client.get(playlist.tracks.next)).data
+      console.log({playlist, tracks})
+      playlist.tracks = tracks
+      result = [...result, ...playlist.tracks.items]
+    }
+    return result
+  },
+
   async authenticate(): Promise<any> {
     console.log(`[OAuth2] Requesting authorization token`);
     try {

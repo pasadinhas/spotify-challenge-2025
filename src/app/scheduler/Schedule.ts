@@ -12,24 +12,24 @@ class SeededRandom {
   private m: number = 2 ** 32;
 
   constructor(seed: number) {
-      this.seed = seed;
+    this.seed = seed;
   }
 
   // Generates a deterministic pseudo-random number
   next(): number {
-      this.seed = (this.a * this.seed + this.c) % this.m;
-      return this.seed / this.m;
+    this.seed = (this.a * this.seed + this.c) % this.m;
+    return this.seed / this.m;
   }
 }
 
 function deterministicShuffle<T>(array: T[], rng: SeededRandom): T[] {
-  const result = [...array];  // Create a copy to avoid mutating the original array
+  const result = [...array]; // Create a copy to avoid mutating the original array
   const n = result.length;
 
   // Fisher-Yates shuffle using the seeded random number generator
   for (let i = n - 1; i > 0; i--) {
-      const j = Math.floor(rng.next() * (i + 1)); // Random index between 0 and i
-      [result[i], result[j]] = [result[j], result[i]]; // Swap elements
+    const j = Math.floor(rng.next() * (i + 1)); // Random index between 0 and i
+    [result[i], result[j]] = [result[j], result[i]]; // Swap elements
   }
 
   return result;
@@ -41,12 +41,12 @@ function getDayOfYear(date: Date): number {
 
   // Check if the year is a leap year
   const isLeapYear = (year: number): boolean => {
-      return (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0));
+    return year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
   };
 
   // Adjust for leap year by changing February to 29 days if necessary
   if (isLeapYear(date.getFullYear())) {
-      daysInMonth[1] = 29;
+    daysInMonth[1] = 29;
   }
 
   // Get the year, month, and day of the given date
@@ -55,7 +55,9 @@ function getDayOfYear(date: Date): number {
   const day = date.getDate();
 
   // Sum the days in all the previous months of the given year
-  let dayOfYear = daysInMonth.slice(0, month).reduce((acc, days) => acc + days, 0);
+  let dayOfYear = daysInMonth
+    .slice(0, month)
+    .reduce((acc, days) => acc + days, 0);
 
   // Add the days of the current month
   dayOfYear += day - 1;
@@ -114,10 +116,42 @@ while (!validShuffle) {
   iterations += 1;
 }
 
-console.log(`Valid shuffle after ${iterations} iterations.`)
+console.log(`Valid shuffle after ${iterations} iterations.`);
 
 export function getRules(date: Date) {
   return shuffle[getDayOfYear(date)];
 }
 
 export const Schedule = shuffle;
+
+const START_OF_YEAR = new Date(2025, 0, 0).getDate();
+let playlistIndex = 0;
+const dayIndicesWithMultipleSongs = FixedDateRules.map((fixedDateRule) =>
+  getDayOfYear(new Date(fixedDateRule.date))
+);
+const PlaylistIndicesByDate = Array.from(
+  { length: 365 },
+  (_, index) => index
+).reduce((dictionary, dayIndex) => {
+  const date = new Date(2025, 0, 0);
+  date.setDate(date.getDate() + 1 + dayIndex);
+  const dateStr = formatDate(date)
+  if (dayIndicesWithMultipleSongs.includes(dayIndex)) {
+    dictionary[dateStr] = [
+      playlistIndex++,
+      playlistIndex++,
+      playlistIndex++,
+    ];
+  } else {
+    dictionary[dateStr] = [playlistIndex++];
+  }
+  return dictionary;
+}, {} as { [key: string]: number[] });
+
+export function getPlaylistIndices(date: Date) {
+  return PlaylistIndicesByDate[formatDate(date)]
+}
+
+function formatDate(date: Date) {
+  return date.toLocaleDateString('en-CA')
+}

@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
-import { Schedule, getRules } from "./scheduler/Schedule";
+import { Schedule, getRules, getPlaylistIndices } from "./scheduler/Schedule";
+import Spotify from "./Spotify";
+import SpotifyEmbededTrack from "./SpotifyEmbededTrack";
 
 const CALENDAR = {
   January: 31,
@@ -19,47 +21,79 @@ const CALENDAR = {
 
 type MONTH = keyof typeof CALENDAR;
 
+const NOW = new Date();
+
 function App() {
   const [debugMode, setDebugMode] = useState(false);
   const [month, setMonth] = useState<MONTH>(
     () => new Date().toLocaleString("default", { month: "long" }) as MONTH
   );
   const [day, setDay] = useState(() => new Date().getDate());
-  const date = new Date(2025, Object.keys(CALENDAR).indexOf(month), day);
-  const isFuture = !debugMode && date > new Date();
+  const selectedDate = new Date(
+    2025,
+    Object.keys(CALENDAR).indexOf(month),
+    day
+  );
+  const isFuture = (date: Date) => !debugMode && date > NOW;
+  const [playlistTracks, setPlaylistTracks] =
+    useState<SpotifyApi.PlaylistTrackObject[]>();
+  useEffect(() => {
+    (async function () {
+      setPlaylistTracks(
+        await Spotify.getPlaylistTracks("2fFCa8euP1YhQX3WPmEsz7")
+      );
+    })();
+  }, []);
 
-  const rule = getRules(date);
+  const rule = getRules(selectedDate);
   const similarRules = Schedule.filter((r) => r.rule === rule.rule);
 
   return (
     <div className="min-w-full min-h-full flex flex-col content-center justify-center pt-20">
       <h1 className="mb-20 text-5xl font-extrabold text-center">
-        {date.toLocaleDateString("default", {
+        {selectedDate.toLocaleDateString("default", {
           month: "long",
           day: "numeric",
           year: "numeric",
         })}
       </h1>
       <h2 className="mb-10 text-3xl font-bold text-center">
-        {isFuture ? "Come back on this day to see the rule" : rule.rule}
+        {isFuture(selectedDate)
+          ? "Come back on this day to see the rule"
+          : rule.rule}
       </h2>
-      <p className="text-center mb-10">{isFuture ? "???" : rule.description}</p>
+      <p className="text-center mb-10">
+        {isFuture(selectedDate) ? "???" : rule.description}
+      </p>
       {rule.notes && (
-        <p className="text-center mb-10">{isFuture ? "???" : rule.notes}</p>
+        <p className="text-center mb-10">
+          {isFuture(selectedDate) ? "???" : rule.notes}
+        </p>
       )}
-      <div className="flex flex-col lg:flex-row min-w-full px-50 justify-around">
-        {similarRules.map((r, index) => (
-          <div key={index}>
-            <h5 className="mb-10 text-xl font-bold text-center">
-              {isFuture
-                ? "???"
-                : r.date.toLocaleString("default", {
-                    month: "long",
-                    day: "numeric",
-                  })}
-            </h5>
-          </div>
-        ))}
+      <div className="grid grid-cols-1 lg:grid-cols-3 min-w-full gap-5 px-5">
+        {similarRules.map((r, index) => {
+          if (isFuture(r.date)) {
+            return (
+              <div>
+                <h5 className="mb-10 text-xl font-bold text-center">???</h5>
+              </div>
+            );
+          }
+          const tracks = getPlaylistIndices(r.date).map(i => (playlistTracks || [])[i]);
+
+          return (
+            <div key={index}>
+              <h5 className="mb-10 text-xl font-bold text-center">
+                {r.date.toLocaleString("default", {
+                  month: "long",
+                  day: "numeric",
+                })}
+              </h5>
+              <h6 className="text-lg text-center">{r.player}</h6>
+              <SpotifyEmbededTrack songId={tracks[0]?.track?.uri} />
+            </div>
+          );
+        })}
       </div>
       <div className="flex min-w-full mt-20 px-5 gap-8 justify-around">
         <select
