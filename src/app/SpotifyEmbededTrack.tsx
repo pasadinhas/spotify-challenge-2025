@@ -1,6 +1,6 @@
 export default function SpotifyEmbededTrack({ songId }: { songId: string | undefined }) {
   if (!songId) {
-    return "<no song>"
+    return <span>(no song)</span>
   }
   return (
       <iframe

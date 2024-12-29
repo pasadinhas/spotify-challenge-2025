@@ -5,7 +5,8 @@ import Time from "./scheduler/Time";
 import DatePicker from "./components/DatePicker";
 import SelectedRule from "./components/SelectedRule";
 import Tracks from "./components/Tracks";
-import { env } from "process";
+
+const ALLOW_DEBUG = false;
 
 function App() {
   const [debugMode, setDebugMode] = useState(false);
@@ -22,7 +23,6 @@ function App() {
 
   const [month, setMonth] = useState(() => new Date().getMonth());
   const [day, setDay] = useState(() => new Date().getDate());
-  console.log({ day, month });
   const scheduledDay = Schedule.on(new Date(2025, month, day));
 
   return (
@@ -31,7 +31,7 @@ function App() {
       <Tracks scheduledDay={scheduledDay} playlistTracks={playlistTracks} />
       <DatePicker day={day} setDay={setDay} month={month} setMonth={setMonth} />
 
-      {env.DEV && (
+      {ALLOW_DEBUG && (
         <label className="mt-20 px-5 flex flex-row gap-3">
           <input
             type="checkbox"

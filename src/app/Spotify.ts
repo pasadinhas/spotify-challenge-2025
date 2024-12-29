@@ -63,7 +63,6 @@ const Spotify = {
     result = [...result, ...playlist.tracks.items]
     while (playlist.tracks.next) {
       const tracks: SpotifyApi.PagingObject<SpotifyApi.PlaylistTrackObject> = (await client.get(playlist.tracks.next)).data
-      console.log({playlist, tracks})
       playlist.tracks = tracks
       result = [...result, ...playlist.tracks.items]
     }
@@ -87,7 +86,6 @@ const Spotify = {
           },
         }
       );
-      console.log(response.data);
       localStorage.setItem(LOCAL_STORAGE_ACCESS_TOKEN_KEY, response.data.access_token);
       return response.data;
     } catch (error) {

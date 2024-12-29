@@ -3,7 +3,7 @@ export interface Rule {
   description: string;
   player: string;
   date: Date;
-  notes?: string;
+  notes?: string | null;
 }
 
 export interface ScheduleDay {

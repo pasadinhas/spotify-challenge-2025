@@ -1,7 +1,6 @@
 import { Player1, Player2, Player3 } from "../scheduler/Players";
 import Time from "../scheduler/Time";
 import { ScheduleDay } from "../scheduler/types";
-import SpotifyEmbededTrack from "../SpotifyEmbededTrack";
 import Track from "./Track";
 
 interface TracksProps {
