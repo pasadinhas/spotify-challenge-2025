@@ -41,7 +41,7 @@ function App() {
         })}
       </h1>
       <h2 className="mb-10 text-3xl font-bold text-center">
-        {isFuture ? "Come back on this day to see its rule" : rule.rule}
+        {isFuture ? "Come back on this day to see the rule" : rule.rule}
       </h2>
       <p className="text-center mb-10">{isFuture ? "???" : rule.description}</p>
       {rule.notes && (
@@ -64,13 +64,14 @@ function App() {
       <div className="flex min-w-full mt-20 px-5 gap-8 justify-around">
         <select
           className="bg-white
+          text-gray-900
             border
-            border-gray-300
+          border-gray-300
             rounded-md
             shadow-sm
             p-2
             w-2/3
-            text-gray-900"
+            max-w-lg"
           id="month"
           value={month}
           onChange={(e) => setMonth(e.target.value as MONTH)}
@@ -81,13 +82,14 @@ function App() {
         </select>
         <select
           className="bg-white
+          text-gray-900  
             border
-            border-gray-300
+          border-gray-300
             rounded-md
             shadow-sm
             p-2
             w-1/3
-            text-gray-900"
+            max-w-md"
           id="day"
           value={day}
           onChange={(e) => setDay(Number(e.target.value))}
