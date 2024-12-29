@@ -51,7 +51,7 @@ client.interceptors.response.use(
 );
 
 const Spotify = {
-  async getPlaylist(id: string): Promise<SpotifyApi.PlaylistBaseObject> {
+  async getPlaylist(id: string): Promise<SpotifyApi.PlaylistObjectFull> {
     const response = await client.get(`/v1/playlists/${id}`);
     return response.data;
   },

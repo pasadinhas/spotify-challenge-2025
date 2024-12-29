@@ -5,43 +5,74 @@ import FixedDateRules from "./shared_rules.json";
 // let seed = 32;
 let seed = Math.random() * 100000000;
 
-function dayOfYearIndex(dateStr: string | undefined) {
-  const date = dateStr ? new Date(dateStr) : new Date();
-  const startOfYear = new Date(date.getFullYear(), 0, 1);
-  const diffInMillis = date.getTime() - startOfYear.getTime();
-  return Math.floor(diffInMillis / (1000 * 60 * 60 * 24));
+class SeededRandom {
+  private seed: number;
+  private a: number = 1664525;
+  private c: number = 1013904223;
+  private m: number = 2 ** 32;
+
+  constructor(seed: number) {
+      this.seed = seed;
+  }
+
+  // Generates a deterministic pseudo-random number
+  next(): number {
+      this.seed = (this.a * this.seed + this.c) % this.m;
+      return this.seed / this.m;
+  }
 }
 
-function deterministicShuffle(array: typeof PlayerRules, seed: number) {
-  let currentIndex = array.length,
-    temporaryValue,
-    randomIndex;
-  seed = seed || 1;
-  let random = function () {
-    var x = Math.sin(seed++) * 10000;
-    return x - Math.floor(x);
-  };
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(random() * currentIndex);
-    currentIndex -= 1;
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
+function deterministicShuffle<T>(array: T[], rng: SeededRandom): T[] {
+  const result = [...array];  // Create a copy to avoid mutating the original array
+  const n = result.length;
+
+  // Fisher-Yates shuffle using the seeded random number generator
+  for (let i = n - 1; i > 0; i--) {
+      const j = Math.floor(rng.next() * (i + 1)); // Random index between 0 and i
+      [result[i], result[j]] = [result[j], result[i]]; // Swap elements
   }
-  return array;
+
+  return result;
+}
+
+function getDayOfYear(date: Date): number {
+  // Array with the number of days in each month for a common year
+  const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+  // Check if the year is a leap year
+  const isLeapYear = (year: number): boolean => {
+      return (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0));
+  };
+
+  // Adjust for leap year by changing February to 29 days if necessary
+  if (isLeapYear(date.getFullYear())) {
+      daysInMonth[1] = 29;
+  }
+
+  // Get the year, month, and day of the given date
+  const year = date.getFullYear();
+  const month = date.getMonth(); // 0-based month index (0 = January)
+  const day = date.getDate();
+
+  // Sum the days in all the previous months of the given year
+  let dayOfYear = daysInMonth.slice(0, month).reduce((acc, days) => acc + days, 0);
+
+  // Add the days of the current month
+  dayOfYear += day - 1;
+
+  return dayOfYear;
 }
 
 function validateShuffle(shuffle: any) {
   return true;
 }
 
-function createShuffle() {
-  const playerOneRules = deterministicShuffle([...PlayerRules], seed++);
-  const playerTwoRules = deterministicShuffle([...PlayerRules], seed++);
-  const playerThrRules = deterministicShuffle([...PlayerRules], seed++);
+function createShuffle(seed: number): Rule[] {
+  const RNG = new SeededRandom(seed);
+
+  const playerOneRules = deterministicShuffle([...PlayerRules], RNG);
+  const playerTwoRules = deterministicShuffle([...PlayerRules], RNG);
+  const playerThrRules = deterministicShuffle([...PlayerRules], RNG);
 
   let result = [];
   for (let i = 0; i < playerOneRules.length; i++) {
@@ -51,9 +82,9 @@ function createShuffle() {
     result.push({ ...playerThrRules[i], player: Player3 });
   }
 
-  for (const fixedDataRule of FixedDateRules) {
-    result.splice(dayOfYearIndex(fixedDataRule.date), 0, {
-      ...fixedDataRule,
+  for (const fixedDateRule of FixedDateRules) {
+    result.splice(getDayOfYear(new Date(fixedDateRule.date)), 0, {
+      ...fixedDateRule,
       player: PlayerAll,
     });
   }
@@ -76,13 +107,17 @@ interface Rule {
 let validShuffle = false;
 let shuffle: Rule[] = [];
 
+let iterations = 0;
 while (!validShuffle) {
-  shuffle = createShuffle();
+  shuffle = createShuffle(seed++);
   validShuffle = validateShuffle(shuffle);
+  iterations += 1;
 }
 
+console.log(`Valid shuffle after ${iterations} iterations.`)
+
 export function getRules(date: Date) {
-  return shuffle[dayOfYearIndex(date.toDateString())];
+  return shuffle[getDayOfYear(date)];
 }
 
 export const Schedule = shuffle;
