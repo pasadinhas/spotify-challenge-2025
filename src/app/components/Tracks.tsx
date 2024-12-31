@@ -12,21 +12,21 @@ export default function Tracks({ scheduledDay, playlistTracks }: TracksProps) {
   let tracks = [];
   if (Time.isFuture(scheduledDay.date)) {
     tracks = [
-      <Track date="???" player="???" />,
-      <Track date="???" player="???" />,
-      <Track date="???" player="???" />,
+      <Track key={"track-1"} date="???" player="???" />,
+      <Track key={"track-2"}  date="???" player="???" />,
+      <Track key={"track-3"}  date="???" player="???" />,
     ];
   } else if (scheduledDay.sharedDay) {
     tracks = [
-      <Track date={formatDate(scheduledDay.date)} player={Player1} songId={songId(playlistTracks, scheduledDay.playlistIndices[0])} />,
-      <Track date={formatDate(scheduledDay.date)} player={Player2} songId={songId(playlistTracks, scheduledDay.playlistIndices[1])} />,
-      <Track date={formatDate(scheduledDay.date)} player={Player3} songId={songId(playlistTracks, scheduledDay.playlistIndices[2])} />,
+      <Track key={"track-1"}  date={formatDate(scheduledDay.date)} player={Player1} songId={songId(playlistTracks, scheduledDay.playlistIndices[0])} />,
+      <Track key={"track-2"}  date={formatDate(scheduledDay.date)} player={Player2} songId={songId(playlistTracks, scheduledDay.playlistIndices[1])} />,
+      <Track key={"track-3"}  date={formatDate(scheduledDay.date)} player={Player3} songId={songId(playlistTracks, scheduledDay.playlistIndices[2])} />,
     ];
   } else {
     tracks = [
-      <Track date={formatDate(scheduledDay.allRules[0].date)} player={scheduledDay.allRules[0].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[0])}/>,
-      <Track date={formatDate(scheduledDay.allRules[1].date)} player={scheduledDay.allRules[1].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[1])} />,
-      <Track date={formatDate(scheduledDay.allRules[2].date)} player={scheduledDay.allRules[2].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[2])} />,
+      <Track key={"track-1"}  date={formatDate(scheduledDay.allRules[0].date)} player={scheduledDay.allRules[0].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[0])}/>,
+      <Track key={"track-2"}  date={formatDate(scheduledDay.allRules[1].date)} player={scheduledDay.allRules[1].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[1])} />,
+      <Track key={"track-3"}  date={formatDate(scheduledDay.allRules[2].date)} player={scheduledDay.allRules[2].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[2])} />,
     ];
   }
 

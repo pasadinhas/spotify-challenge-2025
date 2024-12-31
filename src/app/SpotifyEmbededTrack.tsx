@@ -12,6 +12,7 @@ export default function SpotifyEmbededTrack({ songId }: { songId: string | undef
         allowFullScreen={false}
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
+        title={`spotify-song-${songId}`}
       ></iframe>
   );
 }

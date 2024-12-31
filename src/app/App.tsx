@@ -5,8 +5,10 @@ import Time from "./scheduler/Time";
 import DatePicker from "./components/DatePicker";
 import SelectedRule from "./components/SelectedRule";
 import Tracks from "./components/Tracks";
+import { IS_DEV_ENV } from "./helpers";
 
-const ALLOW_DEBUG = false;
+// Use the 2024 playlist for dev
+const PLAYLIST_ID = IS_DEV_ENV ? "2fFCa8euP1YhQX3WPmEsz7" : "0E0dbVRdTkUO8sqdxGgFsU";
 
 function App() {
   const [debugMode, setDebugMode] = useState(false);
@@ -16,7 +18,7 @@ function App() {
   useEffect(() => {
     (async function () {
       setPlaylistTracks(
-        await Spotify.getPlaylistTracks("2fFCa8euP1YhQX3WPmEsz7")
+        await Spotify.getPlaylistTracks(PLAYLIST_ID)
       );
     })();
   }, []);
@@ -31,7 +33,7 @@ function App() {
       <Tracks scheduledDay={scheduledDay} playlistTracks={playlistTracks} />
       <DatePicker day={day} setDay={setDay} month={month} setMonth={setMonth} />
 
-      {ALLOW_DEBUG && (
+      {IS_DEV_ENV && (
         <label className="mt-20 px-5 flex flex-row gap-3">
           <input
             type="checkbox"
