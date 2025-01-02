@@ -23,10 +23,14 @@ export default function Tracks({ scheduledDay, playlistTracks }: TracksProps) {
       <Track key={"track-3"}  date={formatDate(scheduledDay.date)} player={Player3} songId={songId(playlistTracks, scheduledDay.playlistIndices[2])} />,
     ];
   } else {
+    const isTrack1Future = Time.isFuture(scheduledDay.allRules[0].date);
+    const isTrack2Future = Time.isFuture(scheduledDay.allRules[1].date);
+    const isTrack3Future = Time.isFuture(scheduledDay.allRules[2].date);
+
     tracks = [
-      <Track key={"track-1"}  date={formatDate(scheduledDay.allRules[0].date)} player={scheduledDay.allRules[0].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[0])}/>,
-      <Track key={"track-2"}  date={formatDate(scheduledDay.allRules[1].date)} player={scheduledDay.allRules[1].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[1])} />,
-      <Track key={"track-3"}  date={formatDate(scheduledDay.allRules[2].date)} player={scheduledDay.allRules[2].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[2])} />,
+      <Track key={"track-1"}  date={isTrack1Future ? "???" : formatDate(scheduledDay.allRules[0].date)} player={scheduledDay.allRules[0].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[0])}/>,
+      <Track key={"track-2"}  date={isTrack2Future ? "???" : formatDate(scheduledDay.allRules[1].date)} player={scheduledDay.allRules[1].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[1])} />,
+      <Track key={"track-3"}  date={isTrack3Future ? "???" : formatDate(scheduledDay.allRules[2].date)} player={scheduledDay.allRules[2].player} songId={songId(playlistTracks, scheduledDay.playlistIndices[2])} />,
     ];
   }
 
