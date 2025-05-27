@@ -38,13 +38,13 @@ export default function RulePicker({ setDay, setMonth }: RulePickerProps) {
     // Combine both rule sets
     const allRules = [...regRules, ...formattedSharedRules];
     setRules(allRules);
-    setFilteredRules(allRules);
+    setFilteredRules([]); // Start with empty filtered rules
   }, []);
 
   // Filter rules based on search query
   useEffect(() => {
     if (searchQuery.trim() === "") {
-      setFilteredRules(rules);
+      setFilteredRules([]); // Show nothing when search is empty
     } else {
       const filtered = rules.filter(
         (rule) =>
@@ -130,33 +130,35 @@ export default function RulePicker({ setDay, setMonth }: RulePickerProps) {
         </div>
       )}
 
-      <div className="bg-gray-800 rounded-md max-h-96 overflow-y-auto">
-        {filteredRules.length > 0 ? (
-          <ul className="divide-y divide-gray-700">
-            {filteredRules.map((rule, index) => (
-              <li
-                key={index}
-                className="p-3 hover:bg-gray-700 cursor-pointer transition-colors"
-                onClick={() => handleSelectRule(rule)}
-              >
-                <div className="font-medium text-white">{rule.rule}</div>
-                <div className="text-sm text-gray-300 mt-1">
-                  {rule.description}
-                </div>
-                {rule.date && (
-                  <div className="text-xs text-gray-400 mt-1">
-                    Date: {rule.date}
+      {searchQuery.trim() !== "" && (
+        <div className="bg-gray-800 rounded-md max-h-96 overflow-y-auto">
+          {filteredRules.length > 0 ? (
+            <ul className="divide-y divide-gray-700">
+              {filteredRules.map((rule, index) => (
+                <li
+                  key={index}
+                  className="p-3 hover:bg-gray-700 cursor-pointer transition-colors"
+                  onClick={() => handleSelectRule(rule)}
+                >
+                  <div className="font-medium text-white">{rule.rule}</div>
+                  <div className="text-sm text-gray-300 mt-1">
+                    {rule.description}
                   </div>
-                )}
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <div className="p-4 text-center text-gray-400">
-            No rules found matching your search.
-          </div>
-        )}
-      </div>
+                  {rule.date && (
+                    <div className="text-xs text-gray-400 mt-1">
+                      Date: {rule.date}
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div className="p-4 text-center text-gray-400">
+              No rules found matching your search.
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
