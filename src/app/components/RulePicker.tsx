@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import regRules from "../../data/rules.json";
 import sharedRules from "../../data/shared_rules.json";
 import Schedule from "../scheduler/Schedule";
@@ -18,15 +18,19 @@ interface RulePickerProps {
 
 export default function RulePicker({ setDay, setMonth }: RulePickerProps) {
   const [searchQuery, setSearchQuery] = useState("");
-  const [rules, setRules] = useState<RuleItem[]>([]);
-  const [filteredRules, setFilteredRules] = useState<RuleItem[]>([]);
-  const [selectedRule, setSelectedRule] = useState<RuleItem | null>(null);
-  const [navigationMessage, setNavigationMessage] = useState<string | null>(
-    null
-  );
+  const [debouncedSearchQuery, setDebouncedSearchQuery] = useState("");
 
-  // Load and combine rules from both sources on component mount
+  // Debounce search query
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearchQuery(searchQuery);
+    }, 150);
+
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
+
+  // Memoize the combined rules
+  const rules = useMemo(() => {
     // Convert shared rules format to match regular rules
     const formattedSharedRules = sharedRules.map((rule) => ({
       rule: rule.rule,
@@ -35,69 +39,79 @@ export default function RulePicker({ setDay, setMonth }: RulePickerProps) {
       date: rule.date,
     }));
 
+    // Convert regular rules to include optional date property
+    const formattedRegRules = regRules.map((rule) => ({
+      rule: rule.rule,
+      description: rule.description,
+      notes: rule.notes,
+      date: undefined as string | undefined,
+    }));
+
     // Combine both rule sets
-    const allRules = [...regRules, ...formattedSharedRules];
-    setRules(allRules);
-    setFilteredRules([]); // Start with empty filtered rules
+    return [...formattedRegRules, ...formattedSharedRules];
   }, []);
 
-  // Filter rules based on search query
-  useEffect(() => {
-    if (searchQuery.trim() === "") {
-      setFilteredRules([]); // Show nothing when search is empty
-    } else {
-      const filtered = rules.filter(
-        (rule) =>
-          rule.rule.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          rule.description.toLowerCase().includes(searchQuery.toLowerCase())
-      );
-      setFilteredRules(filtered);
+  // Memoize rule appearance status for all rules
+  const ruleAppearanceMap = useMemo(() => {
+    const map = new Map<
+      string,
+      { hasAppeared: boolean; firstOccurrence: Date | null }
+    >();
+
+    const startDate = new Date(2025, 0, 1); // Jan 1, 2025
+    const today = Time.debugMode ? new Date(2025, 11, 31) : new Date();
+
+    rules.forEach((rule) => {
+      let currentDate = new Date(startDate);
+      let hasAppeared = false;
+      let firstOccurrence: Date | null = null;
+
+      while (currentDate <= today && !hasAppeared) {
+        const daySchedule = Schedule.on(currentDate);
+        if (daySchedule.rule.rule === rule.rule) {
+          hasAppeared = true;
+          firstOccurrence = new Date(currentDate);
+        }
+        currentDate.setDate(currentDate.getDate() + 1);
+      }
+
+      map.set(rule.rule, { hasAppeared, firstOccurrence });
+    });
+
+    return map;
+  }, [rules]);
+
+  // Filter rules based on debounced search query
+  const filteredRules = useMemo(() => {
+    if (debouncedSearchQuery.trim() === "") {
+      return []; // Show nothing when search is empty
     }
-  }, [searchQuery, rules]);
+
+    return rules.filter(
+      (rule) =>
+        rule.rule.toLowerCase().includes(debouncedSearchQuery.toLowerCase()) ||
+        rule.description
+          .toLowerCase()
+          .includes(debouncedSearchQuery.toLowerCase())
+    );
+  }, [debouncedSearchQuery, rules]);
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
   };
 
-  const handleSelectRule = (rule: RuleItem) => {
-    setSelectedRule(rule);
-    setNavigationMessage(null);
+  const handleSelectRule = useCallback(
+    (rule: RuleItem) => {
+      const appearance = ruleAppearanceMap.get(rule.rule);
 
-    // Check when this rule first appears in the schedule
-    const startDate = new Date(2025, 0, 1); // Jan 1, 2025
-    const today = Time.debugMode ? new Date(2025, 11, 31) : new Date(); // Use end of year in debug mode
-
-    // Find the first occurrence of this rule
-    let firstOccurrence: Date | null = null;
-
-    let currentDate = new Date(startDate);
-    while (currentDate <= today) {
-      const daySchedule = Schedule.on(currentDate);
-      if (daySchedule.rule.rule === rule.rule) {
-        firstOccurrence = new Date(currentDate);
-        break;
+      if (appearance?.hasAppeared && appearance.firstOccurrence) {
+        setMonth(appearance.firstOccurrence.getMonth());
+        setDay(appearance.firstOccurrence.getDate());
+        setSearchQuery("");
       }
-      currentDate.setDate(currentDate.getDate() + 1);
-    }
-
-    if (firstOccurrence) {
-      // We found an occurrence on or before today
-      setMonth(firstOccurrence.getMonth());
-      setDay(firstOccurrence.getDate());
-      setNavigationMessage(
-        `This rule first appeared on ${firstOccurrence.toLocaleDateString(
-          "default",
-          {
-            month: "long",
-            day: "numeric",
-            year: "numeric",
-          }
-        )}`
-      );
-    } else {
-      setNavigationMessage("This rule hasn't appeared yet.");
-    }
-  };
+    },
+    [ruleAppearanceMap, setMonth, setDay]
+  );
 
   return (
     <div className="mt-10 px-5 max-w-2xl mx-auto w-full">
@@ -111,46 +125,41 @@ export default function RulePicker({ setDay, setMonth }: RulePickerProps) {
         />
       </div>
 
-      {navigationMessage && (
-        <div className="mb-6 p-4 bg-gray-800 rounded-md text-white">
-          {navigationMessage}
-        </div>
-      )}
-
-      {selectedRule && (
-        <div className="mb-6 p-4 bg-red-700 rounded-md">
-          <h3 className="text-xl font-bold">{selectedRule.rule}</h3>
-          <p className="mt-2">{selectedRule.description}</p>
-          {selectedRule.notes && (
-            <p className="mt-2 italic">{selectedRule.notes}</p>
-          )}
-          {selectedRule.date && (
-            <p className="mt-2 text-sm">Date: {selectedRule.date}</p>
-          )}
-        </div>
-      )}
-
       {searchQuery.trim() !== "" && (
         <div className="bg-gray-800 rounded-md max-h-96 overflow-y-auto">
           {filteredRules.length > 0 ? (
             <ul className="divide-y divide-gray-700">
-              {filteredRules.map((rule, index) => (
-                <li
-                  key={index}
-                  className="p-3 hover:bg-gray-700 cursor-pointer transition-colors"
-                  onClick={() => handleSelectRule(rule)}
-                >
-                  <div className="font-medium text-white">{rule.rule}</div>
-                  <div className="text-sm text-gray-300 mt-1">
-                    {rule.description}
-                  </div>
-                  {rule.date && (
-                    <div className="text-xs text-gray-400 mt-1">
-                      Date: {rule.date}
+              {filteredRules.map((rule, index) => {
+                const appearance = ruleAppearanceMap.get(rule.rule);
+                const hasAppeared = appearance?.hasAppeared ?? false;
+
+                return (
+                  <li
+                    key={index}
+                    className={`p-3 transition-colors ${
+                      hasAppeared
+                        ? "hover:bg-gray-700 cursor-pointer"
+                        : "cursor-not-allowed"
+                    }`}
+                    onClick={() => handleSelectRule(rule)}
+                  >
+                    <div className="font-medium text-white">{rule.rule}</div>
+                    <div className="text-sm text-gray-300 mt-1">
+                      {rule.description}
                     </div>
-                  )}
-                </li>
-              ))}
+                    {!hasAppeared && (
+                      <div className="text-sm text-red-500 mt-1">
+                        This rule has not appeared yet.
+                      </div>
+                    )}
+                    {rule.date && (
+                      <div className="text-xs text-gray-400 mt-1">
+                        Date: {rule.date}
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           ) : (
             <div className="p-4 text-center text-gray-400">
