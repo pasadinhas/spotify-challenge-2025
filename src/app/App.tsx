@@ -3,6 +3,7 @@ import Schedule from "./scheduler/Schedule";
 import Spotify from "./Spotify";
 import Time from "./scheduler/Time";
 import DatePicker from "./components/DatePicker";
+import RulePicker from "./components/RulePicker";
 import SelectedRule from "./components/SelectedRule";
 import Tracks from "./components/Tracks";
 import { IS_DEV_ENV } from "./helpers";
@@ -32,6 +33,7 @@ function App() {
       <SelectedRule scheduledDay={scheduledDay} />
       <Tracks scheduledDay={scheduledDay} playlistTracks={playlistTracks} />
       <DatePicker day={day} setDay={setDay} month={month} setMonth={setMonth} />
+      <RulePicker setDay={setDay} setMonth={setMonth} />
 
       {IS_DEV_ENV && (
         <label className="mt-20 px-5 flex flex-row gap-3">
