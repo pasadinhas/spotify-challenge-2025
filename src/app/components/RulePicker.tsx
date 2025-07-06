@@ -14,9 +14,14 @@ interface RuleItem {
 interface RulePickerProps {
   setDay: (day: number) => void;
   setMonth: (month: number) => void;
+  playlistTracks: SpotifyApi.PlaylistTrackObject[] | undefined;
 }
 
-export default function RulePicker({ setDay, setMonth }: RulePickerProps) {
+export default function RulePicker({
+  setDay,
+  setMonth,
+  playlistTracks,
+}: RulePickerProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [debouncedSearchQuery, setDebouncedSearchQuery] = useState("");
 
@@ -81,6 +86,24 @@ export default function RulePicker({ setDay, setMonth }: RulePickerProps) {
     return map;
   }, [rules]);
 
+  // Build a reverse mapping from playlist index to date
+  const playlistIndexToDate = useMemo(() => {
+    const map = new Map<number, Date>();
+    const startDate = new Date(2025, 0, 1); // Jan 1, 2025
+    const endDate = new Date(2025, 11, 31); // Dec 31, 2025
+    let currentDate = new Date(startDate);
+    while (currentDate <= endDate) {
+      const indices = Schedule.on(currentDate).playlistIndices;
+      indices.forEach((idx) => {
+        if (!map.has(idx)) {
+          map.set(idx, new Date(currentDate));
+        }
+      });
+      currentDate.setDate(currentDate.getDate() + 1);
+    }
+    return map;
+  }, []);
+
   // Filter rules based on debounced search query
   const filteredRules = useMemo(() => {
     if (debouncedSearchQuery.trim() === "") {
@@ -95,6 +118,25 @@ export default function RulePicker({ setDay, setMonth }: RulePickerProps) {
           .includes(debouncedSearchQuery.toLowerCase())
     );
   }, [debouncedSearchQuery, rules]);
+
+  // Filter tracks based on debounced search query, keeping original index
+  const filteredTracks = useMemo(() => {
+    if (!playlistTracks || debouncedSearchQuery.trim() === "") return [];
+    return playlistTracks
+      .map((pt, idx) => ({ pt, idx }))
+      .filter(({ pt }) => {
+        if (!pt.track || !pt.track.name) return false;
+        const nameMatch = pt.track.name
+          .toLowerCase()
+          .includes(debouncedSearchQuery.toLowerCase());
+        const artistMatch =
+          pt.track.artists &&
+          pt.track.artists.some((a) =>
+            a.name.toLowerCase().includes(debouncedSearchQuery.toLowerCase())
+          );
+        return nameMatch || artistMatch;
+      });
+  }, [debouncedSearchQuery, playlistTracks]);
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
@@ -113,12 +155,25 @@ export default function RulePicker({ setDay, setMonth }: RulePickerProps) {
     [ruleAppearanceMap, setMonth, setDay]
   );
 
+  // Handle selecting a track: jump to the day it was used
+  const handleSelectTrack = useCallback(
+    (playlistIndex: number) => {
+      const date = playlistIndexToDate.get(playlistIndex);
+      if (date) {
+        setMonth(date.getMonth());
+        setDay(date.getDate());
+        setSearchQuery("");
+      }
+    },
+    [playlistIndexToDate, setMonth, setDay]
+  );
+
   return (
     <div className="mt-10 px-5 max-w-2xl mx-auto w-full">
       <div className="mb-6">
         <input
           type="text"
-          placeholder="Search for a rule..."
+          placeholder="Search for a rule or song..."
           className="w-full p-3 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:border-red-500"
           value={searchQuery}
           onChange={handleSearchChange}
@@ -127,43 +182,80 @@ export default function RulePicker({ setDay, setMonth }: RulePickerProps) {
 
       {searchQuery.trim() !== "" && (
         <div className="bg-gray-800 rounded-md max-h-96 overflow-y-auto">
-          {filteredRules.length > 0 ? (
-            <ul className="divide-y divide-gray-700">
-              {filteredRules.map((rule, index) => {
-                const appearance = ruleAppearanceMap.get(rule.rule);
-                const hasAppeared = appearance?.hasAppeared ?? false;
+          {/* Rule results */}
+          {filteredRules.length > 0 && (
+            <>
+              <div className="px-4 pt-4 pb-2 text-xs text-gray-400 uppercase tracking-wider">
+                Rules
+              </div>
+              <ul className="divide-y divide-gray-700">
+                {filteredRules.map((rule, index) => {
+                  const appearance = ruleAppearanceMap.get(rule.rule);
+                  const hasAppeared = appearance?.hasAppeared ?? false;
 
-                return (
-                  <li
-                    key={index}
-                    className={`p-3 transition-colors ${
-                      hasAppeared
-                        ? "hover:bg-gray-700 cursor-pointer"
-                        : "cursor-not-allowed"
-                    }`}
-                    onClick={() => handleSelectRule(rule)}
-                  >
-                    <div className="font-medium text-white">{rule.rule}</div>
-                    <div className="text-sm text-gray-300 mt-1">
-                      {rule.description}
-                    </div>
-                    {!hasAppeared && (
-                      <div className="text-sm text-red-500 mt-1">
-                        This rule has not appeared yet.
+                  return (
+                    <li
+                      key={"rule-" + index}
+                      className={`p-3 transition-colors ${
+                        hasAppeared
+                          ? "hover:bg-gray-700 cursor-pointer"
+                          : "cursor-not-allowed"
+                      }`}
+                      onClick={() => handleSelectRule(rule)}
+                    >
+                      <div className="font-medium text-white">{rule.rule}</div>
+                      <div className="text-sm text-gray-300 mt-1">
+                        {rule.description}
                       </div>
-                    )}
-                    {rule.date && (
-                      <div className="text-xs text-gray-400 mt-1">
-                        Date: {rule.date}
+                      {!hasAppeared && (
+                        <div className="text-sm text-red-500 mt-1">
+                          This rule has not appeared yet.
+                        </div>
+                      )}
+                      {rule.date && (
+                        <div className="text-xs text-gray-400 mt-1">
+                          Date: {rule.date}
+                        </div>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </>
+          )}
+
+          {/* Song results */}
+          {filteredTracks.length > 0 && (
+            <>
+              <div className="px-4 pt-4 pb-2 text-xs text-gray-400 uppercase tracking-wider">
+                Songs
+              </div>
+              <ul className="divide-y divide-gray-700">
+                {filteredTracks.map(({ pt, idx }) =>
+                  pt.track ? (
+                    <li
+                      key={"track-" + idx}
+                      className="p-3 transition-colors hover:bg-gray-700 cursor-pointer"
+                      onClick={() => handleSelectTrack(idx)}
+                    >
+                      <div className="font-medium text-white">
+                        {pt.track.name}
                       </div>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-          ) : (
+                      <div className="text-sm text-gray-300 mt-1">
+                        {pt.track.artists &&
+                          pt.track.artists.map((a) => a.name).join(", ")}
+                      </div>
+                    </li>
+                  ) : null
+                )}
+              </ul>
+            </>
+          )}
+
+          {/* No results */}
+          {filteredRules.length === 0 && filteredTracks.length === 0 && (
             <div className="p-4 text-center text-gray-400">
-              No rules found matching your search.
+              No rules or songs found matching your search.
             </div>
           )}
         </div>

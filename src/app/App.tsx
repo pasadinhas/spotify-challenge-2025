@@ -9,7 +9,9 @@ import Tracks from "./components/Tracks";
 import { IS_DEV_ENV } from "./helpers";
 
 // Use the 2024 playlist for dev
-const PLAYLIST_ID = IS_DEV_ENV ? "2fFCa8euP1YhQX3WPmEsz7" : "0E0dbVRdTkUO8sqdxGgFsU";
+const PLAYLIST_ID = IS_DEV_ENV
+  ? "2fFCa8euP1YhQX3WPmEsz7"
+  : "0E0dbVRdTkUO8sqdxGgFsU";
 
 function App() {
   const [debugMode, setDebugMode] = useState(false);
@@ -18,9 +20,7 @@ function App() {
     useState<SpotifyApi.PlaylistTrackObject[]>();
   useEffect(() => {
     (async function () {
-      setPlaylistTracks(
-        await Spotify.getPlaylistTracks(PLAYLIST_ID)
-      );
+      setPlaylistTracks(await Spotify.getPlaylistTracks(PLAYLIST_ID));
     })();
   }, []);
 
@@ -33,7 +33,11 @@ function App() {
       <SelectedRule scheduledDay={scheduledDay} />
       <Tracks scheduledDay={scheduledDay} playlistTracks={playlistTracks} />
       <DatePicker day={day} setDay={setDay} month={month} setMonth={setMonth} />
-      <RulePicker setDay={setDay} setMonth={setMonth} />
+      <RulePicker
+        setDay={setDay}
+        setMonth={setMonth}
+        playlistTracks={playlistTracks}
+      />
 
       {IS_DEV_ENV && (
         <label className="mt-20 px-5 flex flex-row gap-3">
