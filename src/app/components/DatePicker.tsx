@@ -31,9 +31,33 @@ export default function DatePicker({
   setDay,
   setMonth,
 }: DatePickerProps) {
+  const handlePreviousDay = () => {
+    if (day > 1) {
+      setDay(day - 1);
+    } else {
+      // Go to previous month's last day
+      const previousMonth = month === 0 ? 11 : month - 1;
+      const daysInPreviousMonth = Time.daysInMonth(previousMonth);
+      setMonth(previousMonth);
+      setDay(daysInPreviousMonth);
+    }
+  };
+
+  const handleNextDay = () => {
+    const daysInCurrentMonth = Time.daysInMonth(month);
+    if (day < daysInCurrentMonth) {
+      setDay(day + 1);
+    } else {
+      // Go to next month's first day
+      const nextMonth = month === 11 ? 0 : month + 1;
+      setMonth(nextMonth);
+      setDay(1);
+    }
+  };
+
   return (
-    <div className="flex min-w-full mt-20 px-5 gap-8 justify-around">
-      <div className="relative w-2/3 max-w-lg">
+    <div className="flex min-w-full mt-20 px-5 gap-4 justify-around items-center">
+      <div className="relative w-1/4 max-w-lg">
         <select
           className="appearance-none p-3 pr-16 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:border-red-500 w-full"
           id="month"
@@ -50,7 +74,23 @@ export default function DatePicker({
           <DropdownArrow />
         </div>
       </div>
-      <div className="relative w-1/3 max-w-md">
+
+      <div className="flex gap-2">
+        <button
+          onClick={handlePreviousDay}
+          className="p-3 bg-gray-800 text-white border border-gray-700 rounded-md hover:border-red-500 focus:outline-none focus:border-red-500 transition-colors duration-200 text-sm font-medium"
+        >
+          Previous Day
+        </button>
+        <button
+          onClick={handleNextDay}
+          className="p-3 bg-gray-800 text-white border border-gray-700 rounded-md hover:border-red-500 focus:outline-none focus:border-red-500 transition-colors duration-200 text-sm font-medium"
+        >
+          Next Day
+        </button>
+      </div>
+
+      <div className="relative w-1/4 max-w-md">
         <select
           className="appearance-none p-3 pr-16 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:border-red-500 w-full"
           id="day"
