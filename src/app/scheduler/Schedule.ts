@@ -4,9 +4,7 @@ import { createShuffle } from "./Shuffle";
 import Time from "./Time";
 import { Rule, ScheduleDay } from "./types";
 
-const seed = IS_DEV_ENV
-  ? Math.round(Math.random() * 100000000000)
-  : 424242424548;
+const seed = 424242424548;
 
 function validateShuffle(shuffle: Rule[]) {
   const songsForSecondHalfOfTheYear = [

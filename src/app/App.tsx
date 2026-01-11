@@ -8,10 +8,7 @@ import SelectedRule from "./components/SelectedRule";
 import Tracks from "./components/Tracks";
 import { IS_DEV_ENV } from "./helpers";
 
-// Use the 2024 playlist for dev
-const PLAYLIST_ID = IS_DEV_ENV
-  ? "2fFCa8euP1YhQX3WPmEsz7"
-  : "0E0dbVRdTkUO8sqdxGgFsU";
+const PLAYLIST_ID = "0E0dbVRdTkUO8sqdxGgFsU";
 
 function App() {
   const [debugMode, setDebugMode] = useState(false);

@@ -1,0 +1,2627 @@
+[
+    {
+        "rule": "Foreign Vibes",
+        "description": "A song sang in a language that is not an official language of any country we all currently live in",
+        "tracks": [
+            {
+                "added_at": "2025-01-14T08:09:19Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2DLrgv7HhJanCuD8L9uJLR"
+            },
+            {
+                "added_at": "2025-01-22T00:10:32Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4hPz8nqYC8yG7X29imHEv5"
+            },
+            {
+                "added_at": "2025-06-21T00:28:44Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0YmbCvOH82KPkFVK3qBaAD"
+            }
+        ]
+    },
+    {
+        "rule": "Whistle While You Listen",
+        "description": "Song that features whistling",
+        "tracks": [
+            {
+                "added_at": "2025-01-09T08:49:34Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6dm7uuuheS6MIqq8GTQYtO"
+            },
+            {
+                "added_at": "2025-05-04T13:04:35Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3ovjw5HZZv43SxTwApooCM"
+            },
+            {
+                "added_at": "2025-08-13T13:33:49Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:386RUes7n1uM1yfzgeUuwp"
+            }
+        ]
+    },
+    {
+        "rule": "Where the Streets Have No Name",
+        "description": "A song with a place/location in the title",
+        "tracks": [
+            {
+                "added_at": "2025-01-24T00:51:14Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4qIYQGmFLOdifdUKRcz5sy"
+            },
+            {
+                "added_at": "2025-03-12T11:36:24Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6ogBy0iHVGL40eL8UC3Cwr"
+            },
+            {
+                "added_at": "2025-04-19T21:29:15Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2Di0qFNb7ATroCGB3q0Ka7"
+            }
+        ]
+    },
+    {
+        "rule": "Lack of Imagination",
+        "description": "Song that features a fade-out ending",
+        "tracks": [
+            {
+                "added_at": "2025-01-27T07:43:52Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0j0gJqxitjhmmkrW56dtQH"
+            },
+            {
+                "added_at": "2025-02-10T20:57:05Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3FtYbEfBqAlGO46NUDQSAt"
+            },
+            {
+                "added_at": "2025-05-01T14:10:40Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:40riOy7x9W7GXjyGp4pjAv"
+            }
+        ]
+    },
+    {
+        "rule": "Challenge Accepted (Again)",
+        "description": "A cover from a song in the 2024 challenge",
+        "tracks": [
+            {
+                "added_at": "2025-05-15T11:17:26Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0gXmHoUSNYxXd5HIzIHxoX"
+            },
+            {
+                "added_at": "2025-07-29T10:26:36Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5waIgzOI0q7OtudJvysTLO"
+            },
+            {
+                "added_at": "2025-12-13T10:36:31Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1wS3gRK4Yryz0Vcvegifaj"
+            }
+        ]
+    },
+    {
+        "rule": "Year in Review",
+        "description": "Add any song you'd like to celebrate the end of the year",
+        "tracks": [
+            {
+                "added_at": "2025-12-31T17:40:04Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1JVI1KKAhMpK8nSyLS9RQy"
+            },
+            {
+                "added_at": "2025-12-31T17:53:34Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:7GF92haKwJg9WUdnkTxRtr"
+            },
+            {
+                "added_at": "2025-12-31T19:10:59Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7n4fLJFV9KG15EgwTJovKI"
+            }
+        ]
+    },
+    {
+        "rule": "Letter Perfect",
+        "description": "A song that starts with the first letter of your name",
+        "tracks": [
+            {
+                "added_at": "2025-05-07T08:31:39Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:273QnyCvJB65rScHJ1nPZb"
+            },
+            {
+                "added_at": "2025-05-30T09:30:29Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3ysiD7ZgsPc3xgGJ59DpS7"
+            },
+            {
+                "added_at": "2025-10-12T21:05:10Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2pZ6qKtKItTdeb26JXzVQx"
+            }
+        ]
+    },
+    {
+        "rule": "License to Track",
+        "description": "(Theme) Song from a 007 James Bond movie",
+        "tracks": [
+            {
+                "added_at": "2025-03-29T09:41:18Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6I4snLrVOrJsLdd43isc27"
+            },
+            {
+                "added_at": "2025-08-04T08:16:29Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0BlnapfYbgEbTfjtg5tbCT"
+            },
+            {
+                "added_at": "2025-11-09T00:52:20Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1PWnAEQcbwQwK759otUbta"
+            }
+        ]
+    },
+    {
+        "rule": "Kiwis and Crocodiles",
+        "description": "A song from Oceania",
+        "tracks": [
+            {
+                "added_at": "2025-03-06T13:22:33Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5xhgR89wwhw0fJ1i1YA0Qd"
+            },
+            {
+                "added_at": "2025-03-19T11:49:16Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6K8VQ84MqhsoakN5MjrnVR"
+            },
+            {
+                "added_at": "2025-04-10T00:07:29Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:5rfJ2Bq2PEL8yBjZLzouEu"
+            }
+        ]
+    },
+    {
+        "rule": "Not a Copy, Just a Coincidence",
+        "description": "A song with the same name as one already published, that is not a cover",
+        "tracks": [
+            {
+                "added_at": "2025-08-01T18:31:37Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5dcYoYFAXh0f0qI05AoufB"
+            },
+            {
+                "added_at": "2025-08-12T09:58:12Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4XPWKmy05Rcff6TLHNoNF8"
+            },
+            {
+                "added_at": "2025-10-28T07:43:14Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3hb2ScEVkGchcAQqrPLP0R"
+            }
+        ]
+    },
+    {
+        "rule": "Lyrics Not Required",
+        "description": "Instrumental song from an artist that usually has lyrics/singing",
+        "tracks": [
+            {
+                "added_at": "2025-02-05T11:25:35Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1rkbMXhEjIytsUGbhoR5pn"
+            },
+            {
+                "added_at": "2025-03-05T10:18:16Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4YmSnlzkU5sF4X7aAiXAuY"
+            },
+            {
+                "added_at": "2025-04-08T07:44:04Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1itLKsCWHtLnxALkgBk1Fa"
+            }
+        ]
+    },
+    {
+        "rule": "The Album Awakening",
+        "description": "Song from the first album one bought (or the first album one remembers buying)",
+        "tracks": [
+            {
+                "added_at": "2025-02-26T07:59:13Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5MzjQ95rdB2xt9DNa2IzaC"
+            },
+            {
+                "added_at": "2025-09-22T10:35:22Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4lg0h4AJhPMxbO3VMpbUqS"
+            },
+            {
+                "added_at": "2025-11-04T23:48:11Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:551qy5vUgrUfEUc4dCNfht"
+            }
+        ]
+    },
+    {
+        "rule": "Heroes Assemble",
+        "description": "A song from a movie that features a super hero",
+        "tracks": [
+            {
+                "added_at": "2025-02-07T18:14:32Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:22ea9e9wspXjaR7qfqfsdS"
+            },
+            {
+                "added_at": "2025-05-09T06:48:43Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6eN1f9KNmiWEhpE2RhQqB5"
+            },
+            {
+                "added_at": "2025-05-10T08:04:34Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2LMq1O0NiqGhPOlXo3McYQ"
+            }
+        ]
+    },
+    {
+        "rule": "Greenery and Harmony",
+        "description": "A song from an album with a plant name in the title",
+        "tracks": [
+            {
+                "added_at": "2025-01-17T01:20:03Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2mBIHFv81gM8vgB5ACICpR"
+            },
+            {
+                "added_at": "2025-03-22T07:30:40Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:7h1YqA5MZrRxmkUFpukRcp"
+            },
+            {
+                "added_at": "2025-09-16T23:14:52Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7wCmS9TTVUcIhRalDYFgPy"
+            }
+        ]
+    },
+    {
+        "rule": "Alliterative Anthem",
+        "description": "Song name has exactly two words, both starting with the same letter",
+        "tracks": [
+            {
+                "added_at": "2025-05-20T20:29:42Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1rqqCSm0Qe4I9rUvWncaom"
+            },
+            {
+                "added_at": "2025-06-23T23:48:10Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:48bo7uexDvAThcRDvEB2W7"
+            },
+            {
+                "added_at": "2025-07-13T09:06:27Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1wuH0uWzHDIWNNo7yXIvel"
+            }
+        ]
+    },
+    {
+        "rule": "The 8th Art?",
+        "description": "Song from a Video Game OST",
+        "tracks": [
+            {
+                "added_at": "2025-05-16T07:43:57Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6TlkF7n92ITZ9k7NcyL0aF"
+            },
+            {
+                "added_at": "2025-06-04T12:54:41Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3j1lvwbdfj3xflDnQazc8n"
+            },
+            {
+                "added_at": "2025-06-12T01:48:54Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:69aANpX3qkhEkrac79HqTg"
+            }
+        ]
+    },
+    {
+        "rule": "By the Numbers",
+        "description": "A song with a number in the title",
+        "tracks": [
+            {
+                "added_at": "2025-01-02T08:06:43Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2CstironSzSwHLDEBkW9Ef"
+            },
+            {
+                "added_at": "2025-05-22T12:31:24Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6X29iaaazwho3ab7GNue5r"
+            },
+            {
+                "added_at": "2025-08-29T07:26:07Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1mvyqSb1tOvtVP1qfWEyPa"
+            }
+        ]
+    },
+    {
+        "rule": "When Paths Crossed",
+        "description": "Song from 2012",
+        "tracks": [
+            {
+                "added_at": "2025-05-14T09:49:09Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6zc0b2JM2M9DKMuLQ1XCRK"
+            },
+            {
+                "added_at": "2025-06-06T21:03:39Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1ZLroqJA8qoS5QEeCo0fA7"
+            },
+            {
+                "added_at": "2025-11-27T01:34:29Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4cluDES4hQEUhmXj6TXkSo"
+            }
+        ]
+    },
+    {
+        "rule": "D'oh!",
+        "description": "The band played this song in The Simpsons",
+        "tracks": [
+            {
+                "added_at": "2025-08-06T19:51:29Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3RdQfyk7BBxxIx0zSnCBIw"
+            },
+            {
+                "added_at": "2025-10-09T23:50:38Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:7tfHoogy2kSg1R1ZeZZJF1"
+            },
+            {
+                "added_at": "2025-12-05T15:52:43Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2abfaXRfvXr9ErmI8oqz4g"
+            }
+        ]
+    },
+    {
+        "rule": "Spotify's Billionaire",
+        "description": "A song with more than 1 billion streams on Spotify",
+        "tracks": [
+            {
+                "added_at": "2025-01-25T00:21:02Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:561jH07mF1jHuk7KlaeF0s"
+            },
+            {
+                "added_at": "2025-05-26T10:19:50Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0snQkGI5qnAmohLE7jTsTn"
+            },
+            {
+                "added_at": "2025-08-23T12:31:42Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6habFhsOp2NvshLv26DqMb"
+            }
+        ]
+    },
+    {
+        "rule": "Not in the Setlist",
+        "description": "Been to a concert of this artist, but this song was not performed",
+        "tracks": [
+            {
+                "added_at": "2025-05-25T06:58:46Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4IDfVjI1TlB1UwlC01T4Bm"
+            },
+            {
+                "added_at": "2025-11-12T11:52:05Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6BUklaFhEYyG70yWWuG0N0"
+            },
+            {
+                "added_at": "2025-12-23T17:23:17Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:4nzke7sFoihZ3c3BL2oEkd"
+            }
+        ]
+    },
+    {
+        "rule": "State of Sound",
+        "description": "Songs that mention any US state",
+        "tracks": [
+            {
+                "added_at": "2025-01-31T19:02:01Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2LN8mDsvMvG7JU69vtpLhk"
+            },
+            {
+                "added_at": "2025-12-08T16:47:16Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:7e89621JPkKaeDSTQ3avtg"
+            },
+            {
+                "added_at": "2025-12-12T10:59:06Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:5sra5UY6sD658OabHL3QtI"
+            }
+        ]
+    },
+    {
+        "rule": "Talk the Talk",
+        "description": "Song features spoken parts (narration, speach, conversations, anything non melodical...)",
+        "tracks": [
+            {
+                "added_at": "2025-03-11T00:26:08Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:07VWSUwiJi9S79W60EWYOE"
+            },
+            {
+                "added_at": "2025-07-18T11:17:38Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4SNbjUefA4j0IO7UsEfpKq"
+            },
+            {
+                "added_at": "2025-07-23T14:07:20Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0FLwYQoXvX8q5iRZnFX59u"
+            }
+        ]
+    },
+    {
+        "rule": "<untitled>",
+        "description": "A song from an album that has no title in the front cover",
+        "tracks": [
+            {
+                "added_at": "2025-08-01T23:02:36Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6Hmj7SrLRbreLVfVS7mV1S"
+            },
+            {
+                "added_at": "2025-08-30T13:10:56Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3ox5lIXRf4r977FsE7JfXs"
+            },
+            {
+                "added_at": "2025-12-17T09:14:33Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2MfrET7Nc3StKQcGoZKqr9"
+            }
+        ]
+    },
+    {
+        "rule": "Se a tanto me ajudar o engenho e arte",
+        "description": "Add a Portuguese song",
+        "tracks": [
+            {
+                "added_at": "2025-06-10T09:41:53Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5R0Y8nR9hRsakrD2JrqEnm"
+            },
+            {
+                "added_at": "2025-06-10T11:33:21Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:66vHHXFNHimIPhMStKcytG"
+            },
+            {
+                "added_at": "2025-06-10T12:06:52Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:5hVrqtXHUQ74QbsehPbTDo"
+            }
+        ]
+    },
+    {
+        "rule": "Gotta Catch 'Em All",
+        "description": "Song with the Pokemon's type whose number is that song's index in the title",
+        "tracks": [
+            {
+                "added_at": "2025-02-28T11:22:06Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5MMnwYs0hIxkENRsbkWJ2G"
+            },
+            {
+                "added_at": "2025-03-01T01:07:00Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:7K8QsHbmUpSX37oOCL4e2g"
+            },
+            {
+                "added_at": "2025-09-05T08:05:14Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0nfGD1kiIuke5FuiFVo0NU"
+            }
+        ]
+    },
+    {
+        "rule": "Doing the Beat",
+        "description": "A song from an artist/band with a verb in the name",
+        "tracks": [
+            {
+                "added_at": "2025-05-17T20:30:56Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:57rAvblBMBmdPBugRF1T77"
+            },
+            {
+                "added_at": "2025-08-24T21:34:15Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3gZEKMkPKdm2br6UxIJPKE"
+            },
+            {
+                "added_at": "2025-10-31T11:47:54Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3w2CsfakU44WTRhDBHqv7g"
+            }
+        ]
+    },
+    {
+        "rule": "And the Oscar Goes To...",
+        "description": "A song that won an Oscar for Best Original Song",
+        "tracks": [
+            {
+                "added_at": "2025-03-23T10:09:10Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0qcr5FMsEO85NAQjrlDRKo"
+            },
+            {
+                "added_at": "2025-03-30T09:18:46Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6XQHlsNu6so4PdglFkJQRJ"
+            },
+            {
+                "added_at": "2025-05-12T06:09:45Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4Y8vb1uy9IjM2V1hqvrAid"
+            }
+        ]
+    },
+    {
+        "rule": "Hidden in the Vault",
+        "description": "A song or version of that was not released in a main studio album",
+        "tracks": [
+            {
+                "added_at": "2025-06-07T18:17:31Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:7wtWgY4ygkxPgnepcQfmIi"
+            },
+            {
+                "added_at": "2025-07-22T09:27:45Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0aym2LBJBk9DAYuHHutrIl"
+            },
+            {
+                "added_at": "2025-10-07T17:00:21Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:5OWsea313ovaQoXvsgWq79"
+            }
+        ]
+    },
+    {
+        "rule": "Two for the Price of One",
+        "description": "A song from a double album",
+        "tracks": [
+            {
+                "added_at": "2025-02-03T09:17:49Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:5jzma6gCzYtKB1DbEwFZKH"
+            },
+            {
+                "added_at": "2025-04-29T23:14:46Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:5HNCy40Ni5BZJFw1TKzRsC"
+            },
+            {
+                "added_at": "2025-09-09T15:11:30Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:32k3OLmeIWe93KY0QzMmZX"
+            }
+        ]
+    },
+    {
+        "rule": "First Name Basis",
+        "description": "A song by an artist that shares your first name",
+        "tracks": [
+            {
+                "added_at": "2025-05-24T09:58:48Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:5c9YHjSjEZxaCxsF1Gy5Jt"
+            },
+            {
+                "added_at": "2025-08-08T08:15:35Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:59uqWPaagd0khPaauWM2lU"
+            },
+            {
+                "added_at": "2025-10-16T23:20:19Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6eIJp4adBYxBGhUvqBkozn"
+            }
+        ]
+    },
+    {
+        "rule": "When Harpsichords Go Pop",
+        "description": "A song with a classic instrument that is not from the classical genre",
+        "tracks": [
+            {
+                "added_at": "2025-05-03T10:21:53Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:2PKKGrBkNB8bV8Vv4hwB2j"
+            },
+            {
+                "added_at": "2025-11-14T15:21:00Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0ARKW62l9uWIDYMZTUmJHF"
+            },
+            {
+                "added_at": "2025-12-19T16:33:06Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2AX5E86cn9n2dgioZEjirI"
+            }
+        ]
+    },
+    {
+        "rule": "Ring, Ring",
+        "description": "Song that features a phone call or voicemail",
+        "tracks": [
+            {
+                "added_at": "2025-09-13T00:12:44Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3XQluxrIuZruRNhG8MgCLm"
+            },
+            {
+                "added_at": "2025-11-25T14:40:23Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1AqfIfEQyEaME7fiv3HzyU"
+            },
+            {
+                "added_at": "2025-12-11T13:57:11Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0VX2eRMcHT0Q2JLIYuPavc"
+            }
+        ]
+    },
+    {
+        "rule": "De Janeiro a Janeiro",
+        "description": "Song with a month in the title or lyrics",
+        "tracks": [
+            {
+                "added_at": "2025-04-11T08:49:22Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1hCU3B8XtEsHXq1MACIsgF"
+            },
+            {
+                "added_at": "2025-06-09T07:09:10Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3hUxzQpSfdDqwM3ZTFQY0K"
+            },
+            {
+                "added_at": "2025-09-04T08:43:03Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:21RRhjnMsrvQpeQ10ptSBZ"
+            }
+        ]
+    },
+    {
+        "rule": "West End",
+        "description": "Song from a Musical",
+        "tracks": [
+            {
+                "added_at": "2025-01-18T01:30:32Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1H7Zqkq54andtaSSnLRrfp"
+            },
+            {
+                "added_at": "2025-01-20T08:56:04Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:57St0tyACFcZCR3MkOVwZ4"
+            },
+            {
+                "added_at": "2025-11-07T10:15:48Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6OG1S805gIrH5nAQbEOPY3"
+            }
+        ]
+    },
+    {
+        "rule": "Buy 1, Get 1 Free!",
+        "description": "Song from an advert",
+        "tracks": [
+            {
+                "added_at": "2025-06-20T20:57:57Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6U5hUX40OWY6l0HaPUWElZ"
+            },
+            {
+                "added_at": "2025-06-30T12:53:16Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:5T8EDUDqKcs6OSOwEsfqG7"
+            },
+            {
+                "added_at": "2025-10-11T23:01:40Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4OLVK3kktkdLPp8dDgoCtb"
+            }
+        ]
+    },
+    {
+        "rule": "All Week Long",
+        "description": "A song that mentions a day of the week",
+        "tracks": [
+            {
+                "added_at": "2025-04-20T18:02:26Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:70C4NyhjD5OZUMzvWZ3njJ"
+            },
+            {
+                "added_at": "2025-07-24T11:15:59Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:31dynF6Vm6s6cLsHEBL8kp"
+            },
+            {
+                "added_at": "2025-08-09T08:01:52Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:37Tmv4NnfQeb0ZgUC4fOJj"
+            }
+        ]
+    },
+    {
+        "rule": "Questions? and Exclamations!",
+        "description": "Song with an exclamation or question mark in the title",
+        "tracks": [
+            {
+                "added_at": "2025-06-27T11:18:52Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:45VlOHY7pEd6IC3plYeKZ3"
+            },
+            {
+                "added_at": "2025-07-10T11:59:41Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2DlHlPMa4M17kufBvI2lEN"
+            },
+            {
+                "added_at": "2025-10-15T17:18:53Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:55lijDD6OAjLFFUHU9tcDm"
+            }
+        ]
+    },
+    {
+        "rule": "Elemental Sound",
+        "description": "Song with one of the four elements (air, water, earth, fire) in the title",
+        "tracks": [
+            {
+                "added_at": "2025-02-26T09:58:41Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3PzsbWSQdLCKDLxn7YZfkM"
+            },
+            {
+                "added_at": "2025-03-17T17:07:20Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7FvSjeL3svbbiPo2Rgirny"
+            },
+            {
+                "added_at": "2025-09-03T13:46:01Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:57JgKwQ0W5nYvTP2UNcNKF"
+            }
+        ]
+    },
+    {
+        "rule": "FIFA Fever",
+        "description": "Song from a Fifa game",
+        "tracks": [
+            {
+                "added_at": "2025-05-06T07:52:11Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:51KyFpjLNwokcYrjxHxFee"
+            },
+            {
+                "added_at": "2025-08-16T09:44:23Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:04MNyOQZDvLsW2gjAm9q2L"
+            },
+            {
+                "added_at": "2025-10-26T09:06:38Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1bx7OUl2UmAnA5oZkm9If7"
+            }
+        ]
+    },
+    {
+        "rule": "Live Cover",
+        "description": "Song you've seen live but not performed by its original artist.",
+        "tracks": [
+            {
+                "added_at": "2025-04-21T00:03:49Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3AhXZa8sUQht0UEdBJgpGc"
+            },
+            {
+                "added_at": "2025-05-05T08:57:56Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:7mVoBnU3mxV5Q6n4DmOv6K"
+            },
+            {
+                "added_at": "2025-08-03T07:00:10Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2tUBqZG2AbRi7Q0BIrVrEj"
+            }
+        ]
+    },
+    {
+        "rule": "Born This Way",
+        "description": "Song from 1994",
+        "tracks": [
+            {
+                "added_at": "2025-03-25T07:32:38Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:2B98ljvzqpCVgt5reTHq28"
+            },
+            {
+                "added_at": "2025-07-02T18:09:55Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6L89mwZXSOwYl76YXfX13s"
+            },
+            {
+                "added_at": "2025-12-22T11:22:55Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0bYg9bo50gSsH3LtXe2SQn"
+            }
+        ]
+    },
+    {
+        "rule": "Canção Close Call",
+        "description": "A song that participated in Festival da Canção but did not win it",
+        "tracks": [
+            {
+                "added_at": "2025-02-20T01:04:22Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:7cZ7steoFPsrdXghnbsUwr"
+            },
+            {
+                "added_at": "2025-08-25T15:35:34Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2Xs3w0v830vLrs5AhMUaF1"
+            },
+            {
+                "added_at": "2025-10-01T23:11:07Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3yPzLGUJryhMcNnRcGc6uj"
+            }
+        ]
+    },
+    {
+        "rule": "Movie Magic",
+        "description": "Song from a Movie OST",
+        "tracks": [
+            {
+                "added_at": "2025-02-22T07:49:51Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:7kazGNVc32QcZeHF6nVOSU"
+            },
+            {
+                "added_at": "2025-07-01T09:30:12Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6qkW9SDS0KBRYRG2NXYAzJ"
+            },
+            {
+                "added_at": "2025-07-09T10:31:45Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:15yScQGLH5QOuXm9XbhnPb"
+            }
+        ]
+    },
+    {
+        "rule": "Song from 2025",
+        "description": "Add any song released in 2025",
+        "tracks": [
+            {
+                "added_at": "2025-12-30T11:32:01Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2OMjHcniFxzijWX7EaBrXE"
+            },
+            {
+                "added_at": "2025-12-30T14:41:32Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3sK8wGT43QFpWrvNQsrQya"
+            },
+            {
+                "added_at": "2025-12-30T16:04:17Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2FFXU4b8sIsiLiTo6EWO19"
+            }
+        ]
+    },
+    {
+        "rule": "Snap, Crackle, Pop",
+        "description": "A song that has an onomatopoeia in the lyrics",
+        "tracks": [
+            {
+                "added_at": "2025-02-24T00:09:59Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4tllh6DmZXgUTMjI0oN6c5"
+            },
+            {
+                "added_at": "2025-04-17T18:05:02Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:66UcQu5LBo2A7AC0A5r0lI"
+            },
+            {
+                "added_at": "2025-09-10T12:38:42Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4l9fZ75WzPZlAIkqJIWlo8"
+            }
+        ]
+    },
+    {
+        "rule": "Album Name, Track Fame",
+        "description": "Song from a self-titled album",
+        "tracks": [
+            {
+                "added_at": "2025-01-23T12:39:21Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3oAmGK1llTX4FydteQrBJo"
+            },
+            {
+                "added_at": "2025-07-30T08:59:51Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1FTSo4v6BOZH9QxKc3MbVM"
+            },
+            {
+                "added_at": "2025-12-29T19:52:54Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6MpgRYycmRg5dvNPoFTGi1"
+            }
+        ]
+    },
+    {
+        "rule": "From the UK to Nowhere",
+        "description": "Songs that reached top 10 UK but never reached top 10 US",
+        "tracks": [
+            {
+                "added_at": "2025-04-15T10:36:27Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1M2nd8jNUkkwrc1dgBPTJz"
+            },
+            {
+                "added_at": "2025-06-26T13:22:14Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0GWGZA5mxo9nHuSyrj70uo"
+            },
+            {
+                "added_at": "2025-11-16T02:42:21Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3DQVgcqaP3iSMbaKsd57l5"
+            }
+        ]
+    },
+    {
+        "rule": "WHY ARE YOU SHOUTING?",
+        "description": "A song with a title in ALL CAPITAL LETERS",
+        "tracks": [
+            {
+                "added_at": "2025-04-06T00:18:50Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0PDUDa38GO8lMxLCRc4lL1"
+            },
+            {
+                "added_at": "2025-07-14T16:15:41Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1eTaznNW4Xxtx9za2SMTXB"
+            },
+            {
+                "added_at": "2025-08-21T16:30:47Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7oVEtyuv9NBmnytsCIsY5I"
+            }
+        ]
+    },
+    {
+        "rule": "Cosmos",
+        "description": "Song with a celestial body in the title",
+        "tracks": [
+            {
+                "added_at": "2025-03-07T09:53:56Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3GCdLUSnKSMJhs4Tj6CV3s"
+            },
+            {
+                "added_at": "2025-08-10T18:34:35Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:7Hjg4M1c4e5lTQMLJ38ECq"
+            },
+            {
+                "added_at": "2025-10-05T20:49:44Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4PlEBjN3ntjMWDF5gvGDSF"
+            }
+        ]
+    },
+    {
+        "rule": "Waltz No. 2",
+        "description": "Song with 3/4 or 6/8 time signature",
+        "tracks": [
+            {
+                "added_at": "2025-06-03T09:41:43Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:64SIlhd3BaHCCMSfajXG7l"
+            },
+            {
+                "added_at": "2025-08-26T06:31:56Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6PypGyiu0Y2lCDBN1XZEnP"
+            },
+            {
+                "added_at": "2025-11-08T14:06:19Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6V4ntlX6608rd3Ec5SpVhj"
+            }
+        ]
+    },
+    {
+        "rule": "See It. Say It. Sorted.",
+        "description": "Song title with at least four words, all ordered alphabetically",
+        "tracks": [
+            {
+                "added_at": "2025-01-21T00:01:34Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6PLVLWG3bjuKrvMJmwjps1"
+            },
+            {
+                "added_at": "2025-02-13T20:05:16Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:752yOQd1JQDSh1495wVQ4C"
+            },
+            {
+                "added_at": "2025-08-15T13:39:56Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0j3p1p06deJ7f9xmJ9yG22"
+            }
+        ]
+    },
+    {
+        "rule": "Endless Replay",
+        "description": "Your most listened song from any year",
+        "tracks": [
+            {
+                "added_at": "2025-04-05T07:45:17Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:20j7B6mL9gnNvG3ic6Vwh5"
+            },
+            {
+                "added_at": "2025-04-08T23:29:47Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1fDFHXcykq4iw8Gg7s5hG9"
+            },
+            {
+                "added_at": "2025-11-27T23:42:11Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:389QX9Q1eUOEZ19vtzzI9O"
+            }
+        ]
+    },
+    {
+        "rule": "Victory Royale",
+        "description": "A song played in Fortnite Festival",
+        "tracks": [
+            {
+                "added_at": "2025-04-24T00:03:54Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0knbMPVHpFbsx38pLoYSRs"
+            },
+            {
+                "added_at": "2025-08-18T09:46:52Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1xsYj84j7hUDDnTTerGWlH"
+            },
+            {
+                "added_at": "2025-09-21T21:03:58Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1tagTr1YAXN4SXFym3fqgI"
+            }
+        ]
+    },
+    {
+        "rule": "Remix Revival",
+        "description": "A remix of a song from this year's or last year's playlist",
+        "tracks": [
+            {
+                "added_at": "2025-04-23T08:35:07Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5K9AcgSi8DK4lZKM2LpFu8"
+            },
+            {
+                "added_at": "2025-07-25T09:32:46Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0b18g3G5spr4ZCkz7Y6Q0Q"
+            },
+            {
+                "added_at": "2025-10-16T10:40:48Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0D57lQnn110jGaup4NguSI"
+            }
+        ]
+    },
+    {
+        "rule": "Colours of the Rainbow",
+        "description": "Song with a color (one and one only) in its title",
+        "tracks": [
+            {
+                "added_at": "2025-07-05T17:57:46Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3od7BHgIcs8lH6uzYNG2ip"
+            },
+            {
+                "added_at": "2025-09-08T17:32:25Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2jSyBXwWHI4eGviqy5oRzN"
+            },
+            {
+                "added_at": "2025-09-19T11:01:42Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1MTQHCpraD4S8g5PAFKzoj"
+            }
+        ]
+    },
+    {
+        "rule": "Blank Space",
+        "description": "A song with no title",
+        "tracks": [
+            {
+                "added_at": "2025-03-15T20:30:25Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3YlDXImO0ztdF7aW0Y24xR"
+            },
+            {
+                "added_at": "2025-04-18T08:40:57Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6rT0BKAbg4y35tukHcfk4N"
+            },
+            {
+                "added_at": "2025-12-04T21:01:10Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3V8vWoCbKbfjNrPaQ4YtSg"
+            }
+        ]
+    },
+    {
+        "rule": "Happily Ever After",
+        "description": "A song that played on Jedi's wedding",
+        "tracks": [
+            {
+                "added_at": "2025-08-08T07:26:40Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:42ZYlp9jbYQyV1xKDEhUJP"
+            },
+            {
+                "added_at": "2025-10-18T14:18:32Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0UFDqAv3AVbU0yDXTsEUsL"
+            },
+            {
+                "added_at": "2025-12-26T09:49:08Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3vkQ5DAB1qQMYO4Mr9zJN6"
+            }
+        ]
+    },
+    {
+        "rule": "Breaking Away",
+        "description": "Band member gone solo",
+        "tracks": [
+            {
+                "added_at": "2025-06-02T07:08:47Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:36r085cj95tQcGaOoPLfc5"
+            },
+            {
+                "added_at": "2025-07-11T11:28:26Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1BwKOjN0v1QeDW0eis6HsX"
+            },
+            {
+                "added_at": "2025-12-10T10:17:41Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7ACxUo21jtTHzy7ZEV56vU"
+            }
+        ]
+    },
+    {
+        "rule": "Vivaldi Would Be Proud",
+        "description": "Song with one of the four seasons in the title or lyrics",
+        "tracks": [
+            {
+                "added_at": "2025-02-19T08:56:12Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3HjyXmT0PyqVFGHR97VnKu"
+            },
+            {
+                "added_at": "2025-06-19T21:06:09Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2usVgnXIkdUHGXsRuIb9r0"
+            },
+            {
+                "added_at": "2025-12-18T00:41:37Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:2jTeyMO0KmMOhKzkAvrnLI"
+            }
+        ]
+    },
+    {
+        "rule": "Across the Atlantic",
+        "description": "Brasilian song covered by a Portuguese, sang with european accent",
+        "tracks": [
+            {
+                "added_at": "2025-02-15T00:02:06Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6m2NpJ7G9r4BdAWbo5jKeq"
+            },
+            {
+                "added_at": "2025-02-16T10:43:36Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2m9fNP1Lrywz8B2OLiZFeQ"
+            },
+            {
+                "added_at": "2025-03-13T12:05:20Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:2Jev4zDOpxoCVTr8yxN54p"
+            }
+        ]
+    },
+    {
+        "rule": "Hello, World of Music",
+        "description": "A song with a programming language name in the title",
+        "tracks": [
+            {
+                "added_at": "2025-01-29T14:04:30Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:4stIzhSPfcyfj3QRYUsjNB"
+            },
+            {
+                "added_at": "2025-02-06T11:10:42Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:07GvNcU1WdyZJq3XxP0kZa"
+            },
+            {
+                "added_at": "2025-08-01T20:06:44Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4hupcimlg3UBbW1kAQ6vrT"
+            }
+        ]
+    },
+    {
+        "rule": "Born to the Beat",
+        "description": "A song released on one's birthday",
+        "tracks": [
+            {
+                "added_at": "2025-03-04T00:07:13Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3VZmChrnVW8JK6ano4gSED"
+            },
+            {
+                "added_at": "2025-03-20T00:46:51Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1y6XHeNN5DSX5PYy7gT0qL"
+            },
+            {
+                "added_at": "2025-06-23T10:46:02Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1OC87njOaBfULfPw6lJmPj"
+            }
+        ]
+    },
+    {
+        "rule": "Emotional Overload",
+        "description": "A song that has at least two feelings names in its title",
+        "tracks": [
+            {
+                "added_at": "2025-03-02T11:01:14Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7iu0WYLdo4yksKf3seaxzI"
+            },
+            {
+                "added_at": "2025-04-02T01:25:48Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0LuShx5q0CPiZZjSWHK7tN"
+            },
+            {
+                "added_at": "2025-06-18T08:19:37Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3ebXMykcMXOcLeJ9xZ17XH"
+            }
+        ]
+    },
+    {
+        "rule": "Masterful Melodies",
+        "description": "Song from graduation year (master's)",
+        "tracks": [
+            {
+                "added_at": "2025-03-03T10:54:29Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0pqnGHJpmpxLKifKRmU6WP"
+            },
+            {
+                "added_at": "2025-05-31T06:06:02Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7ARveOiD31w2Nq0n5FsSf8"
+            },
+            {
+                "added_at": "2025-08-31T23:50:25Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:7pe1Y1LvoRYQTLbaqS05Vg"
+            }
+        ]
+    },
+    {
+        "rule": "42 Seconds of Fame",
+        "description": "A song that is exactly X minutes and 42 seconds long (X can be any integer positive number)",
+        "tracks": [
+            {
+                "added_at": "2025-02-12T10:37:38Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4m2GdLuOhDt6rFbgOFMHIL"
+            },
+            {
+                "added_at": "2025-03-09T15:26:43Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:56KqaFSGTb7ifpt16t5Y1N"
+            },
+            {
+                "added_at": "2025-10-22T09:50:57Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4ZQKOVSLaHG7hWeYz5r019"
+            }
+        ]
+    },
+    {
+        "rule": "Hidden Gem",
+        "description": "Hidden track on a physical album",
+        "tracks": [
+            {
+                "added_at": "2025-01-08T19:44:16Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1RNtm45kw0hPMBz7gKiIYu"
+            },
+            {
+                "added_at": "2025-10-29T00:10:52Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7gdH8gh21hnFPrXZbAca8a"
+            },
+            {
+                "added_at": "2025-12-09T11:38:01Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1wQXj5bgxyZQ2XmE2X9s6n"
+            }
+        ]
+    },
+    {
+        "rule": "Not the Winner, Still a Hit",
+        "description": "A song that finished top 10 in any Eurovision final, but did not win",
+        "tracks": [
+            {
+                "added_at": "2025-01-07T11:23:45Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1uAOCTevGnyKIDbgZdOCnE"
+            },
+            {
+                "added_at": "2025-10-03T23:51:33Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:5htUUUBlgHZ9fztWTTDEFm"
+            },
+            {
+                "added_at": "2025-11-23T22:27:51Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:4vWsnXbf6XGVVqBTbPZaVl"
+            }
+        ]
+    },
+    {
+        "rule": "Hidden in the Lines",
+        "description": "Song that mentions the name of the album but does not contain it on the title",
+        "tracks": [
+            {
+                "added_at": "2025-01-06T00:56:50Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1AA3ZjLo9tD2iSZAs2svyj"
+            },
+            {
+                "added_at": "2025-02-21T00:48:53Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3skn2lauGk7Dx6bVIt5DVj"
+            },
+            {
+                "added_at": "2025-03-18T09:16:20Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1fHodIvqzNeO7ccrhreMDj"
+            }
+        ]
+    },
+    {
+        "rule": "The Opening Line",
+        "description": "The song title is the start of the lyrics",
+        "tracks": [
+            {
+                "added_at": "2025-07-04T08:07:51Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1Jmqubf9kGkWeYQXQKImL5"
+            },
+            {
+                "added_at": "2025-10-30T08:47:41Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:4ugft0Hz5uroNQJQAFqWK7"
+            },
+            {
+                "added_at": "2025-12-03T06:37:49Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:79JW4tqG3AigegX3sKRxgi"
+            }
+        ]
+    },
+    {
+        "rule": "Happy New Year",
+        "description": "Add any song you'd like to celebrate the new year!",
+        "tracks": [
+            {
+                "added_at": "2025-01-01T00:36:45Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:28jHD8xBLnN8esbroQ6zz8"
+            },
+            {
+                "added_at": "2025-01-01T00:38:43Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4TFdpFnoBi0Rjshwop60gU"
+            },
+            {
+                "added_at": "2025-01-01T12:02:45Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3wlNmUeoHnM1jcOcXxC6qI"
+            }
+        ]
+    },
+    {
+        "rule": "Movie Magic, No Script",
+        "description": "A song that was NOT made for a movie, but is part of a movie's Soundtrack.",
+        "tracks": [
+            {
+                "added_at": "2025-02-02T10:35:12Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0b7w8KuzMLHBNrQD6j4ofZ"
+            },
+            {
+                "added_at": "2025-03-21T00:54:25Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:105BMEQeVsGqJOo2dLIldd"
+            },
+            {
+                "added_at": "2025-08-27T11:41:42Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7p6ZGUXjUe0ctAu5RNnghu"
+            }
+        ]
+    },
+    {
+        "rule": "Drinks on the House",
+        "description": "A song that mentions any alcoholic drink in the lyrics",
+        "tracks": [
+            {
+                "added_at": "2025-04-27T00:28:24Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0OozoN53XvHPASSHHkPGhR"
+            },
+            {
+                "added_at": "2025-06-11T09:42:10Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3HMY0r2BAdpasXMY8rseR0"
+            },
+            {
+                "added_at": "2025-09-11T21:28:33Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4cIPLtg1avt2Jm3ne9S1zy"
+            }
+        ]
+    },
+    {
+        "rule": "All You Need Is Love",
+        "description": "A love song",
+        "tracks": [
+            {
+                "added_at": "2025-01-05T13:35:11Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2x1jP9BexWtOKudvuUHbaD"
+            },
+            {
+                "added_at": "2025-11-03T08:58:55Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:2RChe0r2cMoyOvuKobZy44"
+            },
+            {
+                "added_at": "2025-12-16T00:10:26Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1Eb90nmqTrxylKFhcUzW8P"
+            }
+        ]
+    },
+    {
+        "rule": "Hometown Hero",
+        "description": "Song of an artist from our hometown",
+        "tracks": [
+            {
+                "added_at": "2025-06-25T15:46:00Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3XwUj7mfcTGWIAc2gumtWk"
+            },
+            {
+                "added_at": "2025-10-13T07:47:01Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:170WP85UALpBSTipU3YdTu"
+            },
+            {
+                "added_at": "2025-10-25T09:06:10Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6lIP0XT7c3PP60FvHwudsg"
+            }
+        ]
+    },
+    {
+        "rule": "Yummy",
+        "description": "A song that mentions food in the title",
+        "tracks": [
+            {
+                "added_at": "2025-06-16T10:25:40Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4vTa7TbEEhMnVZ8iCgAkk9"
+            },
+            {
+                "added_at": "2025-09-06T16:27:37Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:39v2GlplTV3EXPHLobfchu"
+            },
+            {
+                "added_at": "2025-11-18T11:31:01Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:19RybK6XDbAVpcdxSbZL1o"
+            }
+        ]
+    },
+    {
+        "rule": "Sixties Swing",
+        "description": "A song from the 60s",
+        "tracks": [
+            {
+                "added_at": "2025-01-04T00:08:51Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6rHh8urosEFRI67xVa6fzU"
+            },
+            {
+                "added_at": "2025-10-25T09:02:42Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3SdTKo2uVsxFblQjpScoHy"
+            },
+            {
+                "added_at": "2025-11-26T21:29:14Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3OuMIIFP5TxM8tLXMWYPGV"
+            }
+        ]
+    },
+    {
+        "rule": "Sing Across Time",
+        "description": "Duet where the singers have an age difference of at least 25 years",
+        "tracks": [
+            {
+                "added_at": "2025-04-14T18:00:32Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6ZsKRsnPsdZvXfqqE6bTPy"
+            },
+            {
+                "added_at": "2025-04-28T22:06:00Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3dRsNmOIAwOGQ0fan18IOd"
+            },
+            {
+                "added_at": "2025-12-24T11:52:49Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:5d1ImOkOVGFjhrCHZ9S6qe"
+            }
+        ]
+    },
+    {
+        "rule": "Live Tribute",
+        "description": "Song you've seen performed live by a tribute band but not by the original band.",
+        "tracks": [
+            {
+                "added_at": "2025-06-05T07:43:40Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:7iN1s7xHE4ifF5povM6A48"
+            },
+            {
+                "added_at": "2025-12-01T19:17:43Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2TjdnqlpwOjhijHCwHCP2d"
+            },
+            {
+                "added_at": "2025-12-20T20:59:54Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2ouuCTFyeTU8WEZ5WNH7BX"
+            }
+        ]
+    },
+    {
+        "rule": "Supporting Star",
+        "description": "A song that has a featured artist which is more successful than the main artist",
+        "tracks": [
+            {
+                "added_at": "2025-01-16T12:14:14Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:02dRkCEc8Q5ch4TTcnLxOn"
+            },
+            {
+                "added_at": "2025-02-23T09:19:01Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:22OYxfqknaCPnMHIFasGXD"
+            },
+            {
+                "added_at": "2025-09-15T16:54:15Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:32OlwWuMpZ6b0aN2RZOeMS"
+            }
+        ]
+    },
+    {
+        "rule": "Eurovision Magic",
+        "description": "A song from this year's Eurovision",
+        "tracks": [
+            {
+                "added_at": "2025-07-03T10:32:42Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4kbkYbhWNiSJraySknB4hD"
+            },
+            {
+                "added_at": "2025-09-27T11:04:16Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3gWBWLw3J3XTy3QTo36GqJ"
+            },
+            {
+                "added_at": "2025-12-27T17:14:54Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:321yySUTzRXUbzkRTeTzDB"
+            }
+        ]
+    },
+    {
+        "rule": "The Festival Pass",
+        "description": "A song from an artist featured in Fortnite Festival Pass",
+        "tracks": [
+            {
+                "added_at": "2025-05-29T08:11:29Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0QTOY1FBKwC7jA33N8cLSi"
+            },
+            {
+                "added_at": "2025-11-06T10:55:40Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0dKg2vGC1hFqcK5LGTaKzX"
+            },
+            {
+                "added_at": "2025-11-22T15:24:39Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6pAIZfkNBQh4RAiOliPo4t"
+            }
+        ]
+    },
+    {
+        "rule": "City Lights",
+        "description": "Song with a city on its name",
+        "tracks": [
+            {
+                "added_at": "2025-09-28T02:23:36Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:58UqX83GYOHQFbDsmpayXc"
+            },
+            {
+                "added_at": "2025-09-29T14:46:29Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0V80GWsSjGgFS68PtJbmLB"
+            },
+            {
+                "added_at": "2025-10-03T17:58:39Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1WBSFlSLyOZnSa8fj7a5yC"
+            }
+        ]
+    },
+    {
+        "rule": "Together in Sound",
+        "description": "A song we have seen live the 3 of us together",
+        "tracks": [
+            {
+                "added_at": "2025-04-22T18:24:29Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0EgaCa0seSgemq1f0uB5r1"
+            },
+            {
+                "added_at": "2025-06-14T14:44:59Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5YvBfpEeQSc8h9T0zdkkg9"
+            },
+            {
+                "added_at": "2025-12-15T00:03:27Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:2tJB0GQAGLjZovOBCnf4zE"
+            }
+        ]
+    },
+    {
+        "rule": "Words Across Borders",
+        "description": "Song with lyrics in multiple languages",
+        "tracks": [
+            {
+                "added_at": "2025-03-08T19:01:57Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:5By7Pzgl6TMuVJG168VWzS"
+            },
+            {
+                "added_at": "2025-05-08T15:20:38Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:4lQsB3ERTWSNaAN1IkuNRl"
+            },
+            {
+                "added_at": "2025-12-28T01:11:29Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4ukpy7Q6QmrB7ttNMSAcG2"
+            }
+        ]
+    },
+    {
+        "rule": "The Forbidden Fruit",
+        "description": "A song from Morangos com Açúcar",
+        "tracks": [
+            {
+                "added_at": "2025-07-15T09:13:13Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:42ivvS4SS73EpLD4ivVwNM"
+            },
+            {
+                "added_at": "2025-09-12T13:06:45Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:16EIW7eGBKfLwRByfDigrZ"
+            },
+            {
+                "added_at": "2025-09-20T12:25:19Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4v7DCN09hgXkKazefkznDQ"
+            }
+        ]
+    },
+    {
+        "rule": "You're Gonna Hear Me Roar",
+        "description": "Songs with any feline (cat, lion, tiger, ...) in the lyrics",
+        "tracks": [
+            {
+                "added_at": "2025-03-24T18:30:48Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:799azdZNV34Z1w8CQ1z9ds"
+            },
+            {
+                "added_at": "2025-04-07T21:15:39Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:5nLhOV2pHWx4RqQqxLIz2i"
+            },
+            {
+                "added_at": "2025-12-21T11:31:44Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:2F4FNcz68howQWD4zaGJSi"
+            }
+        ]
+    },
+    {
+        "rule": "Money in the Bank",
+        "description": "Song was/is the entrance song for a WWE superstar",
+        "tracks": [
+            {
+                "added_at": "2025-01-12T09:26:20Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6tKUiAAwCZIVJMeLQDVor3"
+            },
+            {
+                "added_at": "2025-07-28T19:04:35Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:5kkFgrqzq4WV46z9d1hT16"
+            },
+            {
+                "added_at": "2025-12-14T22:30:23Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:1LGv7oHSOGKzpkY3Z8pzc3"
+            }
+        ]
+    },
+    {
+        "rule": "Rhythms of Africa",
+        "description": "A song from the African continent",
+        "tracks": [
+            {
+                "added_at": "2025-01-03T00:28:47Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:5IrbhlBiTEFkTdI8zD7hj4"
+            },
+            {
+                "added_at": "2025-01-26T13:41:44Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3qd6kWpXeX5SMvVuiS9qBY"
+            },
+            {
+                "added_at": "2025-10-23T10:53:30Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:5iU5F3q27kUCUMcolwzJ9s"
+            }
+        ]
+    },
+    {
+        "rule": "Ticket to Ride",
+        "description": "A song that mentions a mean of transportation",
+        "tracks": [
+            {
+                "added_at": "2025-04-01T14:15:47Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1sjmKmR4u9xDeJHjDCn2bZ"
+            },
+            {
+                "added_at": "2025-04-26T09:55:19Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0tl5HRIyc76NxEZA3wWI3X"
+            },
+            {
+                "added_at": "2025-11-15T09:27:22Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3D8dwH690MXQRhtIZTSS9c"
+            }
+        ]
+    },
+    {
+        "rule": "Repeat, Repeat",
+        "description": "Song with a title that is a single word repeated (at least once)",
+        "tracks": [
+            {
+                "added_at": "2025-02-17T00:39:21Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3wPPWcVuinAU7dXcJXtCID"
+            },
+            {
+                "added_at": "2025-02-27T03:18:54Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0puf9yIluy9W0vpMEUoAnN"
+            },
+            {
+                "added_at": "2025-03-27T11:13:28Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6nAglprqqCXvxTgfIFoC2Y"
+            }
+        ]
+    },
+    {
+        "rule": "Footloose and Fancy-Free",
+        "description": "A song with a body part in the title or lyrics",
+        "tracks": [
+            {
+                "added_at": "2025-04-16T16:56:12Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2lE7oRoKssULAtbWViL385"
+            },
+            {
+                "added_at": "2025-11-17T17:34:55Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5RYbKJ3psLCFGKEqyJ931Y"
+            },
+            {
+                "added_at": "2025-11-24T12:06:55Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6h2Xr5MLLtsiqoAjR760QF"
+            }
+        ]
+    },
+    {
+        "rule": "Face/Off",
+        "description": "Band changed lead singer, song must not be of the 1st singer",
+        "tracks": [
+            {
+                "added_at": "2025-03-31T06:49:09Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0xpBr84T3FTm9j4D1MdPtk"
+            },
+            {
+                "added_at": "2025-05-11T17:16:53Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3yiy3FC7WGq5Eqc77lgaWW"
+            },
+            {
+                "added_at": "2025-06-28T20:15:58Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3TO7bbrUKrOSPGRTB5MeCz"
+            }
+        ]
+    },
+    {
+        "rule": "Concert Keepsake",
+        "description": "Song from the last concert we saw live",
+        "tracks": [
+            {
+                "added_at": "2025-09-07T07:54:59Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:7tWX3H5LsfNZQ43OookJsI"
+            },
+            {
+                "added_at": "2025-10-06T17:16:01Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6eALDNWmqM0BAygu09GR1G"
+            },
+            {
+                "added_at": "2025-11-01T17:10:44Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1D8rVxEen38BWcshExLl2i"
+            }
+        ]
+    },
+    {
+        "rule": "One Word, One Hit",
+        "description": "A song with a one-word title",
+        "tracks": [
+            {
+                "added_at": "2025-03-28T00:13:27Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1Mys1gf9SkMBAVGGxpkJ7d"
+            },
+            {
+                "added_at": "2025-07-16T12:10:03Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2gQaQUhDCNGfBVXTvxAmXQ"
+            },
+            {
+                "added_at": "2025-10-09T19:54:43Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3T76zPJz3tWL27FrjJe2ot"
+            }
+        ]
+    },
+    {
+        "rule": "Staying Alive",
+        "description": "A song from the 70s",
+        "tracks": [
+            {
+                "added_at": "2025-02-01T09:58:44Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:78lgmZwycJ3nzsdgmPPGNx"
+            },
+            {
+                "added_at": "2025-08-11T00:33:07Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:2LawezPeJhN4AWuSB0GtAU"
+            },
+            {
+                "added_at": "2025-10-08T09:11:35Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0pQskrTITgmCMyr85tb9qq"
+            }
+        ]
+    },
+    {
+        "rule": "Extended Play",
+        "description": "A song that is at least 8 minutes long",
+        "tracks": [
+            {
+                "added_at": "2025-01-15T00:13:28Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1fDsrQ23eTAVFElUMaf38X"
+            },
+            {
+                "added_at": "2025-05-27T23:10:31Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6Vjk8MNXpQpi0F4BefdTyq"
+            },
+            {
+                "added_at": "2025-08-31T18:12:21Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6ZsZxNP4Iwdyp3kd5oFFQN"
+            }
+        ]
+    },
+    {
+        "rule": "The 27 Club Survivors",
+        "description": "Song by a solo artist, released when they were exactly 28 years old",
+        "tracks": [
+            {
+                "added_at": "2025-06-22T07:31:07Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1daDRI9ahBonbWD8YcxOIB"
+            },
+            {
+                "added_at": "2025-08-19T23:01:00Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4qXxwJ7ZJKafyNatMfpdII"
+            },
+            {
+                "added_at": "2025-10-01T05:12:00Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2g1fdNfsDfEgBUz0TDZwlz"
+            }
+        ]
+    },
+    {
+        "rule": "Country Roads, Make Me Home",
+        "description": "Song with a country on its name",
+        "tracks": [
+            {
+                "added_at": "2025-07-18T23:09:57Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:5yCGnTXgXyw64AnSq6yJaY"
+            },
+            {
+                "added_at": "2025-08-22T16:50:00Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6JBUYAxDsgaH0M5eCUK3UI"
+            },
+            {
+                "added_at": "2025-12-06T11:39:40Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0dOg1ySSI7NkpAe89Zo0b9"
+            }
+        ]
+    },
+    {
+        "rule": "One and the Same",
+        "description": "A song that has the same title as the album it belongs to",
+        "tracks": [
+            {
+                "added_at": "2025-03-10T08:28:21Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6VzcQuzTNTMFnJ6rBSaLH9"
+            },
+            {
+                "added_at": "2025-05-02T21:36:55Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:78tgXRq9Q6tPNP9hKCpgwB"
+            },
+            {
+                "added_at": "2025-10-19T23:07:55Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1JO1xLtVc8mWhIoE3YaCL0"
+            }
+        ]
+    },
+    {
+        "rule": "Not a Cromo",
+        "description": "Song from Idolos (Portugal) Season 3 during the finals (galas)",
+        "tracks": [
+            {
+                "added_at": "2025-01-10T11:17:33Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6IRA4KOVbtiGiTdYoEThJN"
+            },
+            {
+                "added_at": "2025-08-05T06:52:09Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:49FYlytm3dAAraYgpoJZux"
+            },
+            {
+                "added_at": "2025-10-21T15:56:32Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5PK1JCSdr34gWgzYHgt3Jq"
+            }
+        ]
+    },
+    {
+        "rule": "Voice from the Shadows",
+        "description": "Song that is sang by a member of the band that is not the (lead) singer",
+        "tracks": [
+            {
+                "added_at": "2025-04-25T00:23:47Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7ppPZa3TRUSGKaks9wH7VT"
+            },
+            {
+                "added_at": "2025-05-18T11:02:52Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:7CvtwWJcqQgNj0voqv05Q4"
+            },
+            {
+                "added_at": "2025-12-02T12:56:04Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5G2g1EbEtFSMkMbAnhl7FV"
+            }
+        ]
+    },
+    {
+        "rule": "Toon Tunes",
+        "description": "(Theme?) song from a Cartoon/Anime",
+        "tracks": [
+            {
+                "added_at": "2025-04-12T23:41:34Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1f5ByDbtI75AxsgVljlkLH"
+            },
+            {
+                "added_at": "2025-07-12T01:32:32Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4ko7kTQE6jtdQgcSsAcmmQ"
+            },
+            {
+                "added_at": "2025-11-20T08:49:44Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2kA64eDVEWT9P5j0Vt6zPw"
+            }
+        ]
+    },
+    {
+        "rule": "On This Day",
+        "description": "A song that respects the rule for this day on the 2024 challenge",
+        "tracks": [
+            {
+                "added_at": "2025-01-11T11:50:15Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:499qjsTHnssQ79bJhhGJuz"
+            },
+            {
+                "added_at": "2025-02-08T08:37:27Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3BteNTGc7VilqmK9RTFqEW"
+            },
+            {
+                "added_at": "2025-07-07T08:27:01Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3PfIrDoz19wz7qK7tYeu62"
+            }
+        ]
+    },
+    {
+        "rule": "Once Upon a Song",
+        "description": "An original song from a Disney animated movie",
+        "tracks": [
+            {
+                "added_at": "2025-03-26T00:09:47Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1hwdPQtFHISvZ9SXMkNrIK"
+            },
+            {
+                "added_at": "2025-07-06T10:25:17Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1haQRuZnoggW6U6l5jFIj9"
+            },
+            {
+                "added_at": "2025-07-08T09:13:31Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3c1ItvzDDDpmDgLH9SIUp4"
+            }
+        ]
+    },
+    {
+        "rule": "Crossing Linguistic Borders",
+        "description": "A cover of a song in Portuguese sang by a non native speaker",
+        "tracks": [
+            {
+                "added_at": "2025-09-16T07:50:56Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4BpIAXFL2GABMcmbzkqQNY"
+            },
+            {
+                "added_at": "2025-10-27T11:44:46Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:338WASMSTOJFfWpmqOgOF5"
+            },
+            {
+                "added_at": "2025-11-13T19:17:38Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1rjXzDYLMRvnNClDm8n7i2"
+            }
+        ]
+    },
+    {
+        "rule": "Charting the Portuguese Waves",
+        "description": "A song on the weekly chart of that week in some Portuguese radio",
+        "tracks": [
+            {
+                "added_at": "2025-09-14T08:05:46Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2yMTUaAv55qoTD0JPLodIQ"
+            },
+            {
+                "added_at": "2025-10-01T09:57:22Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6xZCDUaY4XzlhCSHKSW7rf"
+            },
+            {
+                "added_at": "2025-11-05T14:23:17Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3NFs3XUduzBfvc5Bx1gmzh"
+            }
+        ]
+    },
+    {
+        "rule": "Triple Threat",
+        "description": "Song, artist and album start with the same letter",
+        "tracks": [
+            {
+                "added_at": "2025-02-14T10:54:55Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6jYgoiJu5ZMw4d8ma2fkJ9"
+            },
+            {
+                "added_at": "2025-06-18T07:42:45Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:7KnBb86UpclhWqhKTtf9vt"
+            },
+            {
+                "added_at": "2025-09-23T06:18:21Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:73nNXl2PZ1Z6j2pbfl8N8R"
+            }
+        ]
+    },
+    {
+        "rule": "Eastern Echoes",
+        "description": "A song from the Asian continent",
+        "tracks": [
+            {
+                "added_at": "2025-02-09T00:04:01Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2agBDIr9MYDUducQPC1sFU"
+            },
+            {
+                "added_at": "2025-07-17T13:23:09Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0zYh96PnOBI8zFCHedpSzc"
+            },
+            {
+                "added_at": "2025-09-25T10:10:26Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:03UrZgTINDqvnUMbbIMhql"
+            }
+        ]
+    },
+    {
+        "rule": "Positive Vibes Only",
+        "description": "A song which title compliments you",
+        "tracks": [
+            {
+                "added_at": "2025-01-13T13:27:17Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2FY7b99s15jUprqC0M5NCT"
+            },
+            {
+                "added_at": "2025-03-16T00:48:45Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0vg4WnUWvze6pBOJDTq99k"
+            },
+            {
+                "added_at": "2025-11-29T18:38:32Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:4zXa17K83Pp6N2yXdVc2sv"
+            }
+        ]
+    },
+    {
+        "rule": "Local Legends",
+        "description": "Song of an artist from where we currently live",
+        "tracks": [
+            {
+                "added_at": "2025-01-30T00:13:49Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:2ibFPYHzUnqVpS2rv655oF"
+            },
+            {
+                "added_at": "2025-04-29T16:42:33Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:2fKG2dvMhPF4BmUkOVdEnC"
+            },
+            {
+                "added_at": "2025-11-19T15:40:03Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7toYVidBIpAmM8Ife3LGrP"
+            }
+        ]
+    },
+    {
+        "rule": "Folklore Fusion",
+        "description": "A song that features portuguese folklore influences",
+        "tracks": [
+            {
+                "added_at": "2025-05-27T10:09:50Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0CpDHhLo3BTGPp9eFbl2JK"
+            },
+            {
+                "added_at": "2025-07-20T16:40:39Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3drskGBsZCSm5r2t16a29G"
+            },
+            {
+                "added_at": "2025-11-10T10:39:30Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2XGRcNVv7uJozHCRLl7SG8"
+            }
+        ]
+    },
+    {
+        "rule": "Cloudy with a Chance of Beats",
+        "description": "A song that includes in the title or lyrics the current weather in the place one is that day",
+        "tracks": [
+            {
+                "added_at": "2025-04-03T11:02:07Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0mvkwaZMP2gAy2ApQLtZRv"
+            },
+            {
+                "added_at": "2025-05-19T14:40:37Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3pf96IFggfQuT6Gafqx2rt"
+            },
+            {
+                "added_at": "2025-10-07T19:19:27Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:7til9cDK5rExLomnvyUhS3"
+            }
+        ]
+    },
+    {
+        "rule": "The Alchemy of Sound",
+        "description": "Song with an element from the periodic table in the title",
+        "tracks": [
+            {
+                "added_at": "2025-05-13T06:14:26Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0Z9UkcT1pnrmLciUJPcMMS"
+            },
+            {
+                "added_at": "2025-05-21T10:56:11Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:2D1uFfnp5ylRPNYbdEa5Kv"
+            },
+            {
+                "added_at": "2025-11-02T23:46:43Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0vJYFKg9z1IvZiQUyX19cD"
+            }
+        ]
+    },
+    {
+        "rule": "Ho! Ho! Ho! Merry Christmas!",
+        "description": "Add a Christmas song",
+        "tracks": [
+            {
+                "added_at": "2025-12-25T11:34:44Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:6qE5c4FQ8NVl6JcUgQhGbX"
+            },
+            {
+                "added_at": "2025-12-25T11:38:02Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0UOG0zUn7t8m8QcxfzR7AH"
+            },
+            {
+                "added_at": "2025-12-25T11:44:11Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:3J8wfzGKOwXJDWfhJOsoTe"
+            }
+        ]
+    },
+    {
+        "rule": "Paperback Writers",
+        "description": "A song that has the name of a book on its title",
+        "tracks": [
+            {
+                "added_at": "2025-08-19T18:00:28Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:3fLCifKkrMCOrc0kwoqKon"
+            },
+            {
+                "added_at": "2025-09-02T06:54:59Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4hRdaL1ZSGvPJNQezb0ejL"
+            },
+            {
+                "added_at": "2025-10-19T08:08:44Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3Jh3HfMlaPKprTLpLF6Woo"
+            }
+        ]
+    },
+    {
+        "rule": "Live and Replayed",
+        "description": "A live version of a song already on this year's or last year's playlist",
+        "tracks": [
+            {
+                "added_at": "2025-06-29T16:25:53Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0dLQn1q9rYqMQgH27jMOHf"
+            },
+            {
+                "added_at": "2025-08-17T10:33:54Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:5s457o0GLooprDJNitW5WF"
+            },
+            {
+                "added_at": "2025-10-14T12:53:28Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2GpBrAoCwt48fxjgjlzMd4"
+            }
+        ]
+    },
+    {
+        "rule": "Unwrapped and Unplayed",
+        "description": "A song from your 2024 Spotify Wrapped that was NOT included on the 2024 challenge",
+        "tracks": [
+            {
+                "added_at": "2025-03-14T17:44:46Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:4ynh8feOVCjMV6QhCj4mQ6"
+            },
+            {
+                "added_at": "2025-05-23T16:57:23Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:4XBtYPGMAYJkuJu2w4pmYl"
+            },
+            {
+                "added_at": "2025-07-27T09:18:56Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3hUk7wHp5Ruas0FLLVW69c"
+            }
+        ]
+    },
+    {
+        "rule": "Sampled Sounds",
+        "description": "Song that samples another song",
+        "tracks": [
+            {
+                "added_at": "2025-01-19T00:20:11Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:1B75hgRqe7A4fwee3g3Wmu"
+            },
+            {
+                "added_at": "2025-06-15T02:57:29Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:3850dYVgOFIXJh5U4BFEWH"
+            },
+            {
+                "added_at": "2025-11-11T16:58:19Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5W3cjX2J3tjhG8zb6u0qHn"
+            }
+        ]
+    },
+    {
+        "rule": "Inception",
+        "description": "A song whose title includes the name of another band / artist",
+        "tracks": [
+            {
+                "added_at": "2025-02-18T00:15:43Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2cUeyLgT8XzjAMCXPkGMFe"
+            },
+            {
+                "added_at": "2025-08-28T09:06:53Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:7v9Ne4758aGFfFc5avh89h"
+            },
+            {
+                "added_at": "2025-11-21T11:40:16Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:7f9mxxS8jOGmT5qYX8HjPz"
+            }
+        ]
+    },
+    {
+        "rule": "Polished Perfection",
+        "description": "A song that was remastered",
+        "tracks": [
+            {
+                "added_at": "2025-04-03T23:09:38Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:7FXj7Qg3YorUxdrzvrcY25"
+            },
+            {
+                "added_at": "2025-06-01T15:47:17Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:4GDmAT5ZZyHdBo32UYDIvM"
+            },
+            {
+                "added_at": "2025-11-30T01:40:17Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:4241PwqR4B6hBdrxbTp8vd"
+            }
+        ]
+    },
+    {
+        "rule": "Not a Mention",
+        "description": "Song title is never mentioned on the lyrics",
+        "tracks": [
+            {
+                "added_at": "2025-07-21T10:36:13Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:6Udjd8z7lr2yblRoIfPR58"
+            },
+            {
+                "added_at": "2025-07-26T21:26:58Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0murAqNGqXlVXoZAsgk1w8"
+            },
+            {
+                "added_at": "2025-07-31T20:27:45Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0WQiDwKJclirSYG9v5tayI"
+            }
+        ]
+    },
+    {
+        "rule": "Sweet Caroline",
+        "description": "A song with a female name in the title",
+        "tracks": [
+            {
+                "added_at": "2025-01-28T00:04:36Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:0aASUtDb1N96NJDwmWj5Gf"
+            },
+            {
+                "added_at": "2025-02-11T00:21:32Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0odIT9B9BvOCnXfS0e4lB5"
+            },
+            {
+                "added_at": "2025-09-18T10:43:22Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:0Xb9irIBfKhOAMgL6ba1dZ"
+            }
+        ]
+    },
+    {
+        "rule": "Cover Me Again",
+        "description": "Cover song",
+        "tracks": [
+            {
+                "added_at": "2025-02-04T08:46:28Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:5TdFjdonWwNxs157fnlTlf"
+            },
+            {
+                "added_at": "2025-04-11T23:40:14Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:1kfrnPViuzKdNwmH21ehLg"
+            },
+            {
+                "added_at": "2025-06-13T12:54:42Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:2G35I5lsee9bQYsevngYdS"
+            }
+        ]
+    },
+    {
+        "rule": "From Yesterday to Today",
+        "description": "A song from the same artist as yesterday",
+        "tracks": [
+            {
+                "added_at": "2025-08-14T07:12:24Z",
+                "added_by": "Daniel",
+                "uri": "spotify:track:0nJW01T7XtvILxQgC5J7Wh"
+            },
+            {
+                "added_at": "2025-09-24T16:12:42Z",
+                "added_by": "Carlos",
+                "uri": "spotify:track:7a7GQ5TxTUMF2LozDdml6V"
+            },
+            {
+                "added_at": "2025-12-07T07:55:07Z",
+                "added_by": "Miguel",
+                "uri": "spotify:track:6hTcuIQa0sxrrByu9wTD7s"
+            }
+        ]
+    }
+]
